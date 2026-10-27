@@ -1,0 +1,49 @@
+# Bases de données locales. L'application Next.js et le script d'import
+# tournent sur la machine hôte et s'y connectent via localhost.
+
+name: music-graph
+
+services:
+  postgres:
+    image: postgres:18-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:?à définir dans .env}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?à définir dans .env}
+      POSTGRES_DB: ${POSTGRES_DB:?à définir dans .env}
+    ports:
+      - "127.0.0.1:${POSTGRES_PORT:-5433}:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  arangodb:
+    image: arangodb:3.12
+    restart: unless-stopped
+    environment:
+      ARANGO_ROOT_PASSWORD: ${ARANGO_ROOT_PASSWORD:?à définir dans .env}
+    ports:
+      # Interface web : http://localhost:8529
+      - "127.0.0.1:${ARANGO_PORT:-8529}:8529"
+    volumes:
+      - arangodb-data:/var/lib/arangodb3
+      - arangodb-apps:/var/lib/arangodb3-apps
+    healthcheck:
+      test:
+        [
+          "CMD-SHELL",
+          "arangosh --server.password \"$${ARANGO_ROOT_PASSWORD}\" --javascript.execute-string 'db._version()' --log.level error > /dev/null",
+        ]
+      interval: 5s
+      timeout: 10s
+      retries: 20
+      start_period: 10s
+
+volumes:
+  postgres-data:
+  arangodb-data:
+  arangodb-apps:

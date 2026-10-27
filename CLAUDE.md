@@ -1,3 +1,7 @@
+# CLAUDE.md
+
+This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+
 @AGENTS.md
 
 # Music Graph
@@ -42,14 +46,29 @@ Ne pas implémenter : paroles, lecture audio, recommandations, interface d'admin
 
 ## Commandes
 
-<!-- TODO : compléter avec /init une fois le projet initialisé -->
-- Lancer les bases : `docker compose up -d`
-- Migrations : 
-- Import : 
-- Dev : 
-- Tests : 
+- Dev : `npm run dev`
+- Build : `npm run build`
+- Lint : `npm run lint`
+- Vérification des types : `npm run typecheck`
+- Formatage : `npm run format` (Prettier)
+- Ajouter un composant shadcn : `npx shadcn@latest add <composant>`
+- Lancer les bases : `docker compose up -d --wait` (après `cp .env.example .env`). Arrêter : `docker compose down` ; tout effacer, données comprises : `docker compose down -v`
+
+Docker (`compose.yaml`) ne contient que PostgreSQL 18 et ArangoDB 3.12 ; Next.js et le script d'import tournent sur l'hôte. PostgreSQL est exposé sur **5433** (5432 est pris par un autre projet), ArangoDB sur 8529 (interface web : http://localhost:8529). Ports liés à `127.0.0.1` uniquement.
+
+Pas encore en place (à compléter lors de leur mise en place) :
+
+- Migrations : <!-- TODO : Drizzle pas encore installé -->
+- Import : <!-- TODO : script d'import pas encore écrit -->
+- Tests : <!-- TODO : Vitest pas encore installé ; prévoir aussi la commande pour un seul fichier, ex. `npx vitest run <fichier>` -->
 
 ## Conventions
+
+- Next.js 16 / React 19 : lire `node_modules/next/dist/docs/` avant d'utiliser une API Next (voir AGENTS.md).
+- shadcn/ui en style `base-luma` : les composants reposent sur `@base-ui/react`, **pas Radix**. Ne pas importer `@radix-ui/*`.
+- `cn` vient du paquet `cn` (réexporté par `lib/utils.ts`), pas de `clsx`/`tailwind-merge`.
+- Alias d'import `@/*` vers la racine (pas de dossier `src/`) : `@/components`, `@/components/ui`, `@/lib`, `@/hooks`.
+- Prettier : sans point-virgule, guillemets doubles, plugin Tailwind (tri des classes, y compris dans `cn()` et `cva()`).
 
 - Secrets uniquement dans `.env` (non commité) ; maintenir `.env.example` à jour.
 - Écrire des tests pour le client MusicBrainz, la transformation des données et les requêtes AQL.
