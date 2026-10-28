@@ -19,23 +19,23 @@ Règles de Merise appliquées :
 | Association (x,n)–(x,n)                                             | Table ; clé primaire = identifiants des entités liées            | SIGNER → `release_artists`, INTERPRÉTER → `recording_artists`, ÊTRE MEMBRE → `memberships`, METTRE EN FAVORI → `favorites` |
 | Association ternaire                                                | Table ; clé primaire = les trois identifiants                    | CRÉDITER → `credits`                                                                       |
 
-Les noms de tables et de colonnes sont en anglais, comme le code et les collections ArangoDB. Dans `schema.ts`, les propriétés seront en camelCase et les colonnes en snake_case, en nommant la colonne explicitement : `sortName: text("sort_name").notNull()`.
+Les noms de tables et de colonnes sont en anglais, comme le code et les collections ArangoDB. Dans `schema.ts`, les propriétés seront en camelCase et les colonnes en snake_case, en nommant la colonne explicitement : `sortingName: text("sorting_name").notNull()`.
 
 ## MLD
 
 Notation : clé primaire <ins>soulignée</ins>, clé étrangère précédée de `#`.
 
-- **artists** (<ins>mbid</ins>, name, sort_name, type, country, begin_date, end_date, disambiguation, import_status, import_error, imported_at)
-- **releases** (<ins>mbid</ins>, release_group_mbid, title, type, date, has_cover_art)
-- **recordings** (<ins>mbid</ins>, title, length_ms, disambiguation)
-- **tracks** (<ins>mbid</ins>, #release_mbid, #recording_mbid, disc_number, position, title, length_ms)
+- **artists** (<ins>mbid</ins>, name, sorting_name, type, country, start_date, finish_date, disambiguation, import_status, import_error, import_date)
+- **releases** (<ins>mbid</ins>, release_group_mbid, title, type, release_date, has_cover_art)
+- **recordings** (<ins>mbid</ins>, title, duration_ms, disambiguation)
+- **tracks** (<ins>mbid</ins>, #release_mbid, #recording_mbid, disc_number, position, title, duration_ms)
 - **roles** (<ins>code</ins>, label, category)
 - **release_artists** (<ins>#release_mbid, #artist_mbid</ins>, position, credited_name, join_phrase)
 - **recording_artists** (<ins>#recording_mbid, #artist_mbid</ins>, position, credited_name, join_phrase)
 - **credits** (<ins>#recording_mbid, #artist_mbid, #role_code</ins>, detail)
-- **memberships** (<ins>#group_mbid, #member_mbid</ins>, begin_date, end_date, detail)
-- **users** (<ins>id</ins>, email, password_hash, created_at) — _B7, optionnel_
-- **favorites** (<ins>#user_id, #artist_mbid</ins>, created_at) — _B7, optionnel_
+- **memberships** (<ins>#group_mbid, #member_mbid</ins>, start_date, finish_date, detail)
+- **users** (<ins>id</ins>, email, password_hash, creation_date) — _B7, optionnel_
+- **favorites** (<ins>#user_id, #artist_mbid</ins>, creation_date) — _B7, optionnel_
 
 `memberships.group_mbid` et `memberships.member_mbid` référencent tous les deux `artists` (association réflexive).
 
@@ -49,15 +49,15 @@ Types PostgreSQL. « Null » = la colonne accepte NULL.
 | ---------------- | --------------- | ---- | ----------------------------------------------------------------------------------------- |
 | `mbid`           | `uuid`          | non  | PK                                                                                        |
 | `name`           | `text`          | non  | index trigramme (recherche)                                                               |
-| `sort_name`      | `text`          | non  | nom de tri (« Beatles, The »)                                                             |
+| `sorting_name`      | `text`          | non  | nom de tri (« Beatles, The »)                                                             |
 | `type`           | `artist_type`   | oui  | inconnu pour certains artistes                                                            |
 | `country`        | `char(2)`       | oui  | code ISO 3166-1 (`US`, `FR`)                                                              |
-| `begin_date`     | `varchar(10)`   | oui  | date partielle, voir [Dates](#dates-partielles)                                           |
-| `end_date`       | `varchar(10)`   | oui  | idem                                                                                      |
+| `start_date`     | `varchar(10)`   | oui  | date partielle, voir [Dates](#dates-partielles)                                           |
+| `finish_date`       | `varchar(10)`   | oui  | idem                                                                                      |
 | `disambiguation` | `text`          | oui  | « US grunge band » : distingue les homonymes                                              |
 | `import_status`  | `import_status` | oui  | `NULL` = artiste découvert via une relation, pas dans le corpus                           |
 | `import_error`   | `text`          | oui  | message de la dernière erreur, `NULL` si `ok`                                             |
-| `imported_at`    | `timestamptz`   | oui  | date de la dernière tentative d'import                                                    |
+| `import_date`    | `timestamptz`   | oui  | date de la dernière tentative d'import                                                    |
 
 ### releases
 
@@ -67,7 +67,7 @@ Types PostgreSQL. « Null » = la colonne accepte NULL.
 | `release_group_mbid` | `uuid`         | non  | **UNIQUE** : une seule édition par album                               |
 | `title`              | `text`         | non  | index trigramme                                                        |
 | `type`               | `release_type` | oui  | type principal du release group                                        |
-| `date`               | `varchar(10)`  | oui  | date partielle                                                         |
+| `release_date`       | `varchar(10)`  | oui  | date partielle                                                         |
 | `has_cover_art`      | `boolean`      | non  | défaut `false` ; champ `cover-art-archive.front` de MusicBrainz        |
 
 ### recordings
@@ -76,7 +76,7 @@ Types PostgreSQL. « Null » = la colonne accepte NULL.
 | ---------------- | --------- | ---- | ----------------------------------------- |
 | `mbid`           | `uuid`    | non  | PK                                        |
 | `title`          | `text`    | non  | index trigramme                           |
-| `length_ms`      | `integer` | oui  | `CHECK (length_ms > 0)`                   |
+| `duration_ms`      | `integer` | oui  | `CHECK (duration_ms > 0)`                   |
 | `disambiguation` | `text`    | oui  | « live », « radio edit »…                 |
 
 ### tracks
@@ -89,7 +89,7 @@ Types PostgreSQL. « Null » = la colonne accepte NULL.
 | `disc_number`    | `smallint` | non  | `CHECK (disc_number >= 1)`                             |
 | `position`       | `smallint` | non  | `CHECK (position >= 1)`                                |
 | `title`          | `text`     | non  | titre imprimé sur l'album (peut différer du morceau)   |
-| `length_ms`      | `integer`  | oui  | durée sur cette édition                                |
+| `duration_ms`      | `integer`  | oui  | durée sur cette édition                                |
 
 `UNIQUE (release_mbid, disc_number, position)` : deux pistes ne peuvent pas occuper la même place. Cette contrainte sert aussi d'index pour lire la tracklist dans l'ordre.
 
@@ -132,8 +132,8 @@ Le crédit affiché se reconstruit dans l'ordre de `position` : `credited_name` 
 | ------------- | ------------- | ---- | ----------------------------------- |
 | `group_mbid`  | `uuid`        | non  | PK, FK → `artists`                  |
 | `member_mbid` | `uuid`        | non  | PK, FK → `artists` ; index          |
-| `begin_date`  | `varchar(10)` | oui  | date partielle                      |
-| `end_date`    | `varchar(10)` | oui  | date partielle                      |
+| `start_date`  | `varchar(10)` | oui  | date partielle                      |
+| `finish_date`    | `varchar(10)` | oui  | date partielle                      |
 | `detail`      | `text`        | oui  | instruments, voix                   |
 
 `CHECK (group_mbid <> member_mbid)`.
@@ -145,7 +145,7 @@ Le crédit affiché se reconstruit dans l'ordre de `position` : `credited_name` 
 | `id`            | `uuid`        | non  | PK, défaut `uuidv7()` (fonction native de PostgreSQL 18)    |
 | `email`         | `text`        | non  | index UNIQUE sur `lower(email)`                             |
 | `password_hash` | `text`        | non  | hash (argon2 ou bcrypt), jamais le mot de passe             |
-| `created_at`    | `timestamptz` | non  | défaut `now()`                                              |
+| `creation_date`    | `timestamptz` | non  | défaut `now()`                                              |
 
 ### favorites (B7)
 
@@ -153,7 +153,7 @@ Le crédit affiché se reconstruit dans l'ordre de `position` : `credited_name` 
 | ------------- | ------------- | ---- | ------------------------------------------- |
 | `user_id`     | `uuid`        | non  | PK, FK → `users`, `ON DELETE CASCADE`       |
 | `artist_mbid` | `uuid`        | non  | PK, FK → `artists`                          |
-| `created_at`  | `timestamptz` | non  | défaut `now()`                              |
+| `creation_date`  | `timestamptz` | non  | défaut `now()`                              |
 
 ## Types énumérés
 
@@ -201,7 +201,7 @@ Pas de clé artificielle (`serial`). Le MBID est stable et fourni par la source.
 
 ### Dates partielles
 
-MusicBrainz donne souvent des dates incomplètes : « 1991 », « 1991-09 ». Le type `date` obligerait à inventer un jour et un mois. On garde donc la chaîne ISO dans `varchar(10)` avec `CHECK (col ~ '^\d{4}(-\d{2}(-\d{2})?)?$')`. L'ordre alphabétique de ces chaînes est aussi l'ordre chronologique : on peut faire `ORDER BY date`.
+MusicBrainz donne souvent des dates incomplètes : « 1991 », « 1991-09 ». Le type `date` obligerait à inventer un jour et un mois. On garde donc la chaîne ISO dans `varchar(10)` avec `CHECK (col ~ '^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$')`. L'ordre alphabétique de ces chaînes est aussi l'ordre chronologique : on peut faire `ORDER BY release_date`.
 
 ### Une seule édition par album
 

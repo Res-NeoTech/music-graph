@@ -1,0 +1,2275 @@
+{
+  "type": "base",
+  "version": "9",
+  "dialect": "postgres",
+  "id": "93f9357e-e899-4db1-99e6-c81869aa058e",
+  "prevIds": [
+    "00000000-0000-0000-0000-000000000000"
+  ],
+  "footprints": [
+    {
+      "statementType": "create_enum",
+      "statementTarget": [
+        "enum",
+        "public",
+        "artist_type"
+      ],
+      "writes": [
+        "s|enum|public.artist_type",
+        "n|enum|public.artist_type",
+        "e|enum|public.artist_type",
+        "n|type|public.artist_type"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_enum",
+      "statementTarget": [
+        "enum",
+        "public",
+        "import_status"
+      ],
+      "writes": [
+        "s|enum|public.import_status",
+        "n|enum|public.import_status",
+        "e|enum|public.import_status",
+        "n|type|public.import_status"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_enum",
+      "statementTarget": [
+        "enum",
+        "public",
+        "release_type"
+      ],
+      "writes": [
+        "s|enum|public.release_type",
+        "n|enum|public.release_type",
+        "e|enum|public.release_type",
+        "n|type|public.release_type"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_enum",
+      "statementTarget": [
+        "enum",
+        "public",
+        "role_category"
+      ],
+      "writes": [
+        "s|enum|public.role_category",
+        "n|enum|public.role_category",
+        "e|enum|public.role_category",
+        "n|type|public.role_category"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "artists"
+      ],
+      "writes": [
+        "s|tbl|public.artists",
+        "n|tbl|public.artists",
+        "e|tbl|public.artists",
+        "n|rel|public.artists",
+        "n|type|public.artists",
+        "n|rel|public.artists_pkey"
+      ],
+      "reads": [
+        "n|sch|public",
+        "n|enum|public.artist_type",
+        "n|enum|public.import_status"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "credits"
+      ],
+      "writes": [
+        "s|tbl|public.credits",
+        "n|tbl|public.credits",
+        "e|tbl|public.credits",
+        "n|rel|public.credits",
+        "n|type|public.credits",
+        "n|rel|public.credits_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "favorites"
+      ],
+      "writes": [
+        "s|tbl|public.favorites",
+        "n|tbl|public.favorites",
+        "e|tbl|public.favorites",
+        "n|rel|public.favorites",
+        "n|type|public.favorites",
+        "n|rel|public.favorites_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "memberships"
+      ],
+      "writes": [
+        "s|tbl|public.memberships",
+        "n|tbl|public.memberships",
+        "e|tbl|public.memberships",
+        "n|rel|public.memberships",
+        "n|type|public.memberships",
+        "n|rel|public.memberships_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "recording_artists"
+      ],
+      "writes": [
+        "s|tbl|public.recording_artists",
+        "n|tbl|public.recording_artists",
+        "e|tbl|public.recording_artists",
+        "n|rel|public.recording_artists",
+        "n|type|public.recording_artists",
+        "n|rel|public.recording_artists_pkey",
+        "n|rel|public.recording_artists_recording_position_unique"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "recordings"
+      ],
+      "writes": [
+        "s|tbl|public.recordings",
+        "n|tbl|public.recordings",
+        "e|tbl|public.recordings",
+        "n|rel|public.recordings",
+        "n|type|public.recordings",
+        "n|rel|public.recordings_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "release_artists"
+      ],
+      "writes": [
+        "s|tbl|public.release_artists",
+        "n|tbl|public.release_artists",
+        "e|tbl|public.release_artists",
+        "n|rel|public.release_artists",
+        "n|type|public.release_artists",
+        "n|rel|public.release_artists_pkey",
+        "n|rel|public.release_artists_release_position_unique"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "releases"
+      ],
+      "writes": [
+        "s|tbl|public.releases",
+        "n|tbl|public.releases",
+        "e|tbl|public.releases",
+        "n|rel|public.releases",
+        "n|type|public.releases",
+        "n|rel|public.releases_pkey",
+        "n|rel|public.releases_release_group_mbid_key"
+      ],
+      "reads": [
+        "n|sch|public",
+        "n|enum|public.release_type"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "roles"
+      ],
+      "writes": [
+        "s|tbl|public.roles",
+        "n|tbl|public.roles",
+        "e|tbl|public.roles",
+        "n|rel|public.roles",
+        "n|type|public.roles",
+        "n|rel|public.roles_pkey"
+      ],
+      "reads": [
+        "n|sch|public",
+        "n|enum|public.role_category"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "tracks"
+      ],
+      "writes": [
+        "s|tbl|public.tracks",
+        "n|tbl|public.tracks",
+        "e|tbl|public.tracks",
+        "n|rel|public.tracks",
+        "n|type|public.tracks",
+        "n|rel|public.tracks_pkey",
+        "n|rel|public.tracks_release_disc_position_unique"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_table",
+      "statementTarget": [
+        "table",
+        "public",
+        "users"
+      ],
+      "writes": [
+        "s|tbl|public.users",
+        "n|tbl|public.users",
+        "e|tbl|public.users",
+        "n|rel|public.users",
+        "n|type|public.users",
+        "n|rel|public.users_pkey"
+      ],
+      "reads": [
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "artists",
+        "artists_name_trgm_idx"
+      ],
+      "writes": [
+        "s|idx|public.artists_name_trgm_idx",
+        "n|idx|public.artists_name_trgm_idx",
+        "e|idx|public.artists_name_trgm_idx",
+        "n|rel|public.artists_name_trgm_idx"
+      ],
+      "reads": [
+        "n|tbl|public.artists",
+        "n|sch|public",
+        "n|col|public.artists.name"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "credits",
+        "credits_artist_mbid_idx"
+      ],
+      "writes": [
+        "s|idx|public.credits_artist_mbid_idx",
+        "n|idx|public.credits_artist_mbid_idx",
+        "e|idx|public.credits_artist_mbid_idx",
+        "n|rel|public.credits_artist_mbid_idx"
+      ],
+      "reads": [
+        "n|tbl|public.credits",
+        "n|sch|public",
+        "n|col|public.credits.artist_mbid"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "memberships",
+        "memberships_member_mbid_idx"
+      ],
+      "writes": [
+        "s|idx|public.memberships_member_mbid_idx",
+        "n|idx|public.memberships_member_mbid_idx",
+        "e|idx|public.memberships_member_mbid_idx",
+        "n|rel|public.memberships_member_mbid_idx"
+      ],
+      "reads": [
+        "n|tbl|public.memberships",
+        "n|sch|public",
+        "n|col|public.memberships.member_mbid"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "recording_artists",
+        "recording_artists_artist_mbid_idx"
+      ],
+      "writes": [
+        "s|idx|public.recording_artists_artist_mbid_idx",
+        "n|idx|public.recording_artists_artist_mbid_idx",
+        "e|idx|public.recording_artists_artist_mbid_idx",
+        "n|rel|public.recording_artists_artist_mbid_idx"
+      ],
+      "reads": [
+        "n|tbl|public.recording_artists",
+        "n|sch|public",
+        "n|col|public.recording_artists.artist_mbid"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "recordings",
+        "recordings_title_trgm_idx"
+      ],
+      "writes": [
+        "s|idx|public.recordings_title_trgm_idx",
+        "n|idx|public.recordings_title_trgm_idx",
+        "e|idx|public.recordings_title_trgm_idx",
+        "n|rel|public.recordings_title_trgm_idx"
+      ],
+      "reads": [
+        "n|tbl|public.recordings",
+        "n|sch|public",
+        "n|col|public.recordings.title"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "release_artists",
+        "release_artists_artist_mbid_idx"
+      ],
+      "writes": [
+        "s|idx|public.release_artists_artist_mbid_idx",
+        "n|idx|public.release_artists_artist_mbid_idx",
+        "e|idx|public.release_artists_artist_mbid_idx",
+        "n|rel|public.release_artists_artist_mbid_idx"
+      ],
+      "reads": [
+        "n|tbl|public.release_artists",
+        "n|sch|public",
+        "n|col|public.release_artists.artist_mbid"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "releases",
+        "releases_title_trgm_idx"
+      ],
+      "writes": [
+        "s|idx|public.releases_title_trgm_idx",
+        "n|idx|public.releases_title_trgm_idx",
+        "e|idx|public.releases_title_trgm_idx",
+        "n|rel|public.releases_title_trgm_idx"
+      ],
+      "reads": [
+        "n|tbl|public.releases",
+        "n|sch|public",
+        "n|col|public.releases.title"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "tracks",
+        "tracks_recording_mbid_idx"
+      ],
+      "writes": [
+        "s|idx|public.tracks_recording_mbid_idx",
+        "n|idx|public.tracks_recording_mbid_idx",
+        "e|idx|public.tracks_recording_mbid_idx",
+        "n|rel|public.tracks_recording_mbid_idx"
+      ],
+      "reads": [
+        "n|tbl|public.tracks",
+        "n|sch|public",
+        "n|col|public.tracks.recording_mbid"
+      ]
+    },
+    {
+      "statementType": "create_index",
+      "statementTarget": [
+        "index",
+        "public",
+        "users",
+        "users_email_unique"
+      ],
+      "writes": [
+        "s|idx|public.users_email_unique",
+        "n|idx|public.users_email_unique",
+        "e|idx|public.users_email_unique",
+        "n|rel|public.users_email_unique"
+      ],
+      "reads": [
+        "n|tbl|public.users",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "credits"
+      ],
+      "writes": [
+        "s|fk|public.credits.credits_recording_mbid_recordings_mbid_fkey",
+        "n|fk|public.credits.credits_recording_mbid_recordings_mbid_fkey",
+        "e|fk|public.credits.credits_recording_mbid_recordings_mbid_fkey",
+        "n|con|public.credits.credits_recording_mbid_recordings_mbid_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.credits",
+        "n|sch|public",
+        "n|tbl|public.recordings",
+        "n|sch|public",
+        "n|col|public.credits.recording_mbid",
+        "n|col|public.recordings.mbid",
+        "e|uniqueness|public.recordings.mbid"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "credits"
+      ],
+      "writes": [
+        "s|fk|public.credits.credits_artist_mbid_artists_mbid_fkey",
+        "n|fk|public.credits.credits_artist_mbid_artists_mbid_fkey",
+        "e|fk|public.credits.credits_artist_mbid_artists_mbid_fkey",
+        "n|con|public.credits.credits_artist_mbid_artists_mbid_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.credits",
+        "n|sch|public",
+        "n|tbl|public.artists",
+        "n|sch|public",
+        "n|col|public.credits.artist_mbid",
+        "n|col|public.artists.mbid",
+        "e|uniqueness|public.artists.mbid"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "credits"
+      ],
+      "writes": [
+        "s|fk|public.credits.credits_role_code_roles_code_fkey",
+        "n|fk|public.credits.credits_role_code_roles_code_fkey",
+        "e|fk|public.credits.credits_role_code_roles_code_fkey",
+        "n|con|public.credits.credits_role_code_roles_code_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.credits",
+        "n|sch|public",
+        "n|tbl|public.roles",
+        "n|sch|public",
+        "n|col|public.credits.role_code",
+        "n|col|public.roles.code",
+        "e|uniqueness|public.roles.code"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "favorites"
+      ],
+      "writes": [
+        "s|fk|public.favorites.favorites_user_id_users_id_fkey",
+        "n|fk|public.favorites.favorites_user_id_users_id_fkey",
+        "e|fk|public.favorites.favorites_user_id_users_id_fkey",
+        "n|con|public.favorites.favorites_user_id_users_id_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.favorites",
+        "n|sch|public",
+        "n|tbl|public.users",
+        "n|sch|public",
+        "n|col|public.favorites.user_id",
+        "n|col|public.users.id",
+        "e|uniqueness|public.users.id"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "favorites"
+      ],
+      "writes": [
+        "s|fk|public.favorites.favorites_artist_mbid_artists_mbid_fkey",
+        "n|fk|public.favorites.favorites_artist_mbid_artists_mbid_fkey",
+        "e|fk|public.favorites.favorites_artist_mbid_artists_mbid_fkey",
+        "n|con|public.favorites.favorites_artist_mbid_artists_mbid_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.favorites",
+        "n|sch|public",
+        "n|tbl|public.artists",
+        "n|sch|public",
+        "n|col|public.favorites.artist_mbid",
+        "n|col|public.artists.mbid",
+        "e|uniqueness|public.artists.mbid"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "memberships"
+      ],
+      "writes": [
+        "s|fk|public.memberships.memberships_group_mbid_artists_mbid_fkey",
+        "n|fk|public.memberships.memberships_group_mbid_artists_mbid_fkey",
+        "e|fk|public.memberships.memberships_group_mbid_artists_mbid_fkey",
+        "n|con|public.memberships.memberships_group_mbid_artists_mbid_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.memberships",
+        "n|sch|public",
+        "n|tbl|public.artists",
+        "n|sch|public",
+        "n|col|public.memberships.group_mbid",
+        "n|col|public.artists.mbid",
+        "e|uniqueness|public.artists.mbid"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "memberships"
+      ],
+      "writes": [
+        "s|fk|public.memberships.memberships_member_mbid_artists_mbid_fkey",
+        "n|fk|public.memberships.memberships_member_mbid_artists_mbid_fkey",
+        "e|fk|public.memberships.memberships_member_mbid_artists_mbid_fkey",
+        "n|con|public.memberships.memberships_member_mbid_artists_mbid_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.memberships",
+        "n|sch|public",
+        "n|tbl|public.artists",
+        "n|sch|public",
+        "n|col|public.memberships.member_mbid",
+        "n|col|public.artists.mbid",
+        "e|uniqueness|public.artists.mbid"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "recording_artists"
+      ],
+      "writes": [
+        "s|fk|public.recording_artists.recording_artists_recording_mbid_recordings_mbid_fkey",
+        "n|fk|public.recording_artists.recording_artists_recording_mbid_recordings_mbid_fkey",
+        "e|fk|public.recording_artists.recording_artists_recording_mbid_recordings_mbid_fkey",
+        "n|con|public.recording_artists.recording_artists_recording_mbid_recordings_mbid_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.recording_artists",
+        "n|sch|public",
+        "n|tbl|public.recordings",
+        "n|sch|public",
+        "n|col|public.recording_artists.recording_mbid",
+        "n|col|public.recordings.mbid",
+        "e|uniqueness|public.recordings.mbid"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "recording_artists"
+      ],
+      "writes": [
+        "s|fk|public.recording_artists.recording_artists_artist_mbid_artists_mbid_fkey",
+        "n|fk|public.recording_artists.recording_artists_artist_mbid_artists_mbid_fkey",
+        "e|fk|public.recording_artists.recording_artists_artist_mbid_artists_mbid_fkey",
+        "n|con|public.recording_artists.recording_artists_artist_mbid_artists_mbid_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.recording_artists",
+        "n|sch|public",
+        "n|tbl|public.artists",
+        "n|sch|public",
+        "n|col|public.recording_artists.artist_mbid",
+        "n|col|public.artists.mbid",
+        "e|uniqueness|public.artists.mbid"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "release_artists"
+      ],
+      "writes": [
+        "s|fk|public.release_artists.release_artists_release_mbid_releases_mbid_fkey",
+        "n|fk|public.release_artists.release_artists_release_mbid_releases_mbid_fkey",
+        "e|fk|public.release_artists.release_artists_release_mbid_releases_mbid_fkey",
+        "n|con|public.release_artists.release_artists_release_mbid_releases_mbid_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.release_artists",
+        "n|sch|public",
+        "n|tbl|public.releases",
+        "n|sch|public",
+        "n|col|public.release_artists.release_mbid",
+        "n|col|public.releases.mbid",
+        "e|uniqueness|public.releases.mbid"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "release_artists"
+      ],
+      "writes": [
+        "s|fk|public.release_artists.release_artists_artist_mbid_artists_mbid_fkey",
+        "n|fk|public.release_artists.release_artists_artist_mbid_artists_mbid_fkey",
+        "e|fk|public.release_artists.release_artists_artist_mbid_artists_mbid_fkey",
+        "n|con|public.release_artists.release_artists_artist_mbid_artists_mbid_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.release_artists",
+        "n|sch|public",
+        "n|tbl|public.artists",
+        "n|sch|public",
+        "n|col|public.release_artists.artist_mbid",
+        "n|col|public.artists.mbid",
+        "e|uniqueness|public.artists.mbid"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "tracks"
+      ],
+      "writes": [
+        "s|fk|public.tracks.tracks_release_mbid_releases_mbid_fkey",
+        "n|fk|public.tracks.tracks_release_mbid_releases_mbid_fkey",
+        "e|fk|public.tracks.tracks_release_mbid_releases_mbid_fkey",
+        "n|con|public.tracks.tracks_release_mbid_releases_mbid_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.tracks",
+        "n|sch|public",
+        "n|tbl|public.releases",
+        "n|sch|public",
+        "n|col|public.tracks.release_mbid",
+        "n|col|public.releases.mbid",
+        "e|uniqueness|public.releases.mbid"
+      ]
+    },
+    {
+      "statementType": "create_fk",
+      "statementTarget": [
+        "table",
+        "public",
+        "tracks"
+      ],
+      "writes": [
+        "s|fk|public.tracks.tracks_recording_mbid_recordings_mbid_fkey",
+        "n|fk|public.tracks.tracks_recording_mbid_recordings_mbid_fkey",
+        "e|fk|public.tracks.tracks_recording_mbid_recordings_mbid_fkey",
+        "n|con|public.tracks.tracks_recording_mbid_recordings_mbid_fkey"
+      ],
+      "reads": [
+        "n|tbl|public.tracks",
+        "n|sch|public",
+        "n|tbl|public.recordings",
+        "n|sch|public",
+        "n|col|public.tracks.recording_mbid",
+        "n|col|public.recordings.mbid",
+        "e|uniqueness|public.recordings.mbid"
+      ]
+    }
+  ],
+  "ddl": [
+    {
+      "schema": "public",
+      "name": "artists",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "credits",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "favorites",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "memberships",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "recording_artists",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "recordings",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "release_artists",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "releases",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "roles",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "tracks",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "users",
+      "isRlsEnabled": false,
+      "entityType": "tables"
+    },
+    {
+      "schema": "public",
+      "name": "artist_type",
+      "values": [
+        "person",
+        "group",
+        "orchestra",
+        "choir",
+        "character",
+        "other"
+      ],
+      "entityType": "enums"
+    },
+    {
+      "schema": "public",
+      "name": "import_status",
+      "values": [
+        "pending",
+        "ok",
+        "failed"
+      ],
+      "entityType": "enums"
+    },
+    {
+      "schema": "public",
+      "name": "release_type",
+      "values": [
+        "album",
+        "ep",
+        "single",
+        "broadcast",
+        "other"
+      ],
+      "entityType": "enums"
+    },
+    {
+      "schema": "public",
+      "name": "role_category",
+      "values": [
+        "performance",
+        "production",
+        "engineering",
+        "writing"
+      ],
+      "entityType": "enums"
+    },
+    {
+      "schema": "public",
+      "table": "artists",
+      "name": "mbid",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "artists",
+      "name": "name",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "artists",
+      "name": "sorting_name",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "artists",
+      "name": "type",
+      "type": "artist_type",
+      "typeSchema": "public",
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "artists",
+      "name": "country",
+      "type": "char(2)",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "artists",
+      "name": "start_date",
+      "type": "varchar(10)",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "artists",
+      "name": "finish_date",
+      "type": "varchar(10)",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "artists",
+      "name": "disambiguation",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "artists",
+      "name": "import_status",
+      "type": "import_status",
+      "typeSchema": "public",
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "artists",
+      "name": "import_error",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "artists",
+      "name": "import_date",
+      "type": "timestamp with time zone",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "credits",
+      "name": "recording_mbid",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "credits",
+      "name": "artist_mbid",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "credits",
+      "name": "role_code",
+      "type": "varchar(32)",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "credits",
+      "name": "detail",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "favorites",
+      "name": "user_id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "favorites",
+      "name": "artist_mbid",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "favorites",
+      "name": "creation_date",
+      "type": "timestamp with time zone",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "now()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "memberships",
+      "name": "group_mbid",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "memberships",
+      "name": "member_mbid",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "memberships",
+      "name": "start_date",
+      "type": "varchar(10)",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "memberships",
+      "name": "finish_date",
+      "type": "varchar(10)",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "memberships",
+      "name": "detail",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "recording_artists",
+      "name": "recording_mbid",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "recording_artists",
+      "name": "artist_mbid",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "recording_artists",
+      "name": "position",
+      "type": "smallint",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "recording_artists",
+      "name": "credited_name",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "recording_artists",
+      "name": "join_phrase",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "''",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "recordings",
+      "name": "mbid",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "recordings",
+      "name": "title",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "recordings",
+      "name": "duration_ms",
+      "type": "integer",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "recordings",
+      "name": "disambiguation",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "release_artists",
+      "name": "release_mbid",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "release_artists",
+      "name": "artist_mbid",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "release_artists",
+      "name": "position",
+      "type": "smallint",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "release_artists",
+      "name": "credited_name",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "release_artists",
+      "name": "join_phrase",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "''",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "releases",
+      "name": "mbid",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "releases",
+      "name": "release_group_mbid",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "releases",
+      "name": "title",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "releases",
+      "name": "type",
+      "type": "release_type",
+      "typeSchema": "public",
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "releases",
+      "name": "release_date",
+      "type": "varchar(10)",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "releases",
+      "name": "has_cover_art",
+      "type": "boolean",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "false",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "roles",
+      "name": "code",
+      "type": "varchar(32)",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "roles",
+      "name": "label",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "roles",
+      "name": "category",
+      "type": "role_category",
+      "typeSchema": "public",
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "tracks",
+      "name": "mbid",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "tracks",
+      "name": "release_mbid",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "tracks",
+      "name": "recording_mbid",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "tracks",
+      "name": "disc_number",
+      "type": "smallint",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "tracks",
+      "name": "position",
+      "type": "smallint",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "tracks",
+      "name": "title",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "tracks",
+      "name": "duration_ms",
+      "type": "integer",
+      "typeSchema": null,
+      "notNull": false,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "users",
+      "name": "id",
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "uuidv7()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "users",
+      "name": "email",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "users",
+      "name": "password_hash",
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "users",
+      "name": "creation_date",
+      "type": "timestamp with time zone",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "now()",
+      "generated": null,
+      "identity": null,
+      "entityType": "columns"
+    },
+    {
+      "schema": "public",
+      "table": "artists",
+      "name": "artists_name_trgm_idx",
+      "nameExplicit": true,
+      "columns": [
+        {
+          "value": "name",
+          "isExpression": false,
+          "asc": true,
+          "nullsFirst": false,
+          "opclass": {
+            "name": "gin_trgm_ops",
+            "default": false
+          }
+        }
+      ],
+      "isUnique": false,
+      "where": null,
+      "with": "",
+      "method": "gin",
+      "concurrently": false,
+      "entityType": "indexes"
+    },
+    {
+      "schema": "public",
+      "table": "credits",
+      "name": "credits_artist_mbid_idx",
+      "nameExplicit": true,
+      "columns": [
+        {
+          "value": "artist_mbid",
+          "isExpression": false,
+          "asc": true,
+          "nullsFirst": false,
+          "opclass": null
+        }
+      ],
+      "isUnique": false,
+      "where": null,
+      "with": "",
+      "method": "btree",
+      "concurrently": false,
+      "entityType": "indexes"
+    },
+    {
+      "schema": "public",
+      "table": "memberships",
+      "name": "memberships_member_mbid_idx",
+      "nameExplicit": true,
+      "columns": [
+        {
+          "value": "member_mbid",
+          "isExpression": false,
+          "asc": true,
+          "nullsFirst": false,
+          "opclass": null
+        }
+      ],
+      "isUnique": false,
+      "where": null,
+      "with": "",
+      "method": "btree",
+      "concurrently": false,
+      "entityType": "indexes"
+    },
+    {
+      "schema": "public",
+      "table": "recording_artists",
+      "name": "recording_artists_artist_mbid_idx",
+      "nameExplicit": true,
+      "columns": [
+        {
+          "value": "artist_mbid",
+          "isExpression": false,
+          "asc": true,
+          "nullsFirst": false,
+          "opclass": null
+        }
+      ],
+      "isUnique": false,
+      "where": null,
+      "with": "",
+      "method": "btree",
+      "concurrently": false,
+      "entityType": "indexes"
+    },
+    {
+      "schema": "public",
+      "table": "recordings",
+      "name": "recordings_title_trgm_idx",
+      "nameExplicit": true,
+      "columns": [
+        {
+          "value": "title",
+          "isExpression": false,
+          "asc": true,
+          "nullsFirst": false,
+          "opclass": {
+            "name": "gin_trgm_ops",
+            "default": false
+          }
+        }
+      ],
+      "isUnique": false,
+      "where": null,
+      "with": "",
+      "method": "gin",
+      "concurrently": false,
+      "entityType": "indexes"
+    },
+    {
+      "schema": "public",
+      "table": "release_artists",
+      "name": "release_artists_artist_mbid_idx",
+      "nameExplicit": true,
+      "columns": [
+        {
+          "value": "artist_mbid",
+          "isExpression": false,
+          "asc": true,
+          "nullsFirst": false,
+          "opclass": null
+        }
+      ],
+      "isUnique": false,
+      "where": null,
+      "with": "",
+      "method": "btree",
+      "concurrently": false,
+      "entityType": "indexes"
+    },
+    {
+      "schema": "public",
+      "table": "releases",
+      "name": "releases_title_trgm_idx",
+      "nameExplicit": true,
+      "columns": [
+        {
+          "value": "title",
+          "isExpression": false,
+          "asc": true,
+          "nullsFirst": false,
+          "opclass": {
+            "name": "gin_trgm_ops",
+            "default": false
+          }
+        }
+      ],
+      "isUnique": false,
+      "where": null,
+      "with": "",
+      "method": "gin",
+      "concurrently": false,
+      "entityType": "indexes"
+    },
+    {
+      "schema": "public",
+      "table": "tracks",
+      "name": "tracks_recording_mbid_idx",
+      "nameExplicit": true,
+      "columns": [
+        {
+          "value": "recording_mbid",
+          "isExpression": false,
+          "asc": true,
+          "nullsFirst": false,
+          "opclass": null
+        }
+      ],
+      "isUnique": false,
+      "where": null,
+      "with": "",
+      "method": "btree",
+      "concurrently": false,
+      "entityType": "indexes"
+    },
+    {
+      "schema": "public",
+      "table": "users",
+      "name": "users_email_unique",
+      "nameExplicit": true,
+      "columns": [
+        {
+          "value": "lower(\"email\")",
+          "isExpression": true,
+          "asc": true,
+          "nullsFirst": false,
+          "opclass": null
+        }
+      ],
+      "isUnique": true,
+      "where": null,
+      "with": "",
+      "method": "btree",
+      "concurrently": false,
+      "entityType": "indexes"
+    },
+    {
+      "schema": "public",
+      "table": "credits",
+      "name": "credits_recording_mbid_recordings_mbid_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "recording_mbid"
+      ],
+      "schemaTo": "public",
+      "tableTo": "recordings",
+      "columnsTo": [
+        "mbid"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "CASCADE",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "credits",
+      "name": "credits_artist_mbid_artists_mbid_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "artist_mbid"
+      ],
+      "schemaTo": "public",
+      "tableTo": "artists",
+      "columnsTo": [
+        "mbid"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "credits",
+      "name": "credits_role_code_roles_code_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "role_code"
+      ],
+      "schemaTo": "public",
+      "tableTo": "roles",
+      "columnsTo": [
+        "code"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "favorites",
+      "name": "favorites_user_id_users_id_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "user_id"
+      ],
+      "schemaTo": "public",
+      "tableTo": "users",
+      "columnsTo": [
+        "id"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "CASCADE",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "favorites",
+      "name": "favorites_artist_mbid_artists_mbid_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "artist_mbid"
+      ],
+      "schemaTo": "public",
+      "tableTo": "artists",
+      "columnsTo": [
+        "mbid"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "memberships",
+      "name": "memberships_group_mbid_artists_mbid_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "group_mbid"
+      ],
+      "schemaTo": "public",
+      "tableTo": "artists",
+      "columnsTo": [
+        "mbid"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "memberships",
+      "name": "memberships_member_mbid_artists_mbid_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "member_mbid"
+      ],
+      "schemaTo": "public",
+      "tableTo": "artists",
+      "columnsTo": [
+        "mbid"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "recording_artists",
+      "name": "recording_artists_recording_mbid_recordings_mbid_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "recording_mbid"
+      ],
+      "schemaTo": "public",
+      "tableTo": "recordings",
+      "columnsTo": [
+        "mbid"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "CASCADE",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "recording_artists",
+      "name": "recording_artists_artist_mbid_artists_mbid_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "artist_mbid"
+      ],
+      "schemaTo": "public",
+      "tableTo": "artists",
+      "columnsTo": [
+        "mbid"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "release_artists",
+      "name": "release_artists_release_mbid_releases_mbid_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "release_mbid"
+      ],
+      "schemaTo": "public",
+      "tableTo": "releases",
+      "columnsTo": [
+        "mbid"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "CASCADE",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "release_artists",
+      "name": "release_artists_artist_mbid_artists_mbid_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "artist_mbid"
+      ],
+      "schemaTo": "public",
+      "tableTo": "artists",
+      "columnsTo": [
+        "mbid"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "tracks",
+      "name": "tracks_release_mbid_releases_mbid_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "release_mbid"
+      ],
+      "schemaTo": "public",
+      "tableTo": "releases",
+      "columnsTo": [
+        "mbid"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "CASCADE",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "tracks",
+      "name": "tracks_recording_mbid_recordings_mbid_fkey",
+      "nameExplicit": false,
+      "columns": [
+        "recording_mbid"
+      ],
+      "schemaTo": "public",
+      "tableTo": "recordings",
+      "columnsTo": [
+        "mbid"
+      ],
+      "onUpdate": "NO ACTION",
+      "onDelete": "NO ACTION",
+      "entityType": "fks"
+    },
+    {
+      "schema": "public",
+      "table": "credits",
+      "name": "credits_pkey",
+      "columns": [
+        "recording_mbid",
+        "artist_mbid",
+        "role_code"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "favorites",
+      "name": "favorites_pkey",
+      "columns": [
+        "user_id",
+        "artist_mbid"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "memberships",
+      "name": "memberships_pkey",
+      "columns": [
+        "group_mbid",
+        "member_mbid"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "recording_artists",
+      "name": "recording_artists_pkey",
+      "columns": [
+        "recording_mbid",
+        "artist_mbid"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "release_artists",
+      "name": "release_artists_pkey",
+      "columns": [
+        "release_mbid",
+        "artist_mbid"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "artists",
+      "name": "artists_pkey",
+      "columns": [
+        "mbid"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "recordings",
+      "name": "recordings_pkey",
+      "columns": [
+        "mbid"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "releases",
+      "name": "releases_pkey",
+      "columns": [
+        "mbid"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "roles",
+      "name": "roles_pkey",
+      "columns": [
+        "code"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "tracks",
+      "name": "tracks_pkey",
+      "columns": [
+        "mbid"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "users",
+      "name": "users_pkey",
+      "columns": [
+        "id"
+      ],
+      "nameExplicit": false,
+      "entityType": "pks"
+    },
+    {
+      "schema": "public",
+      "table": "recording_artists",
+      "name": "recording_artists_recording_position_unique",
+      "nameExplicit": true,
+      "columns": [
+        "recording_mbid",
+        "position"
+      ],
+      "nullsNotDistinct": false,
+      "entityType": "uniques"
+    },
+    {
+      "schema": "public",
+      "table": "release_artists",
+      "name": "release_artists_release_position_unique",
+      "nameExplicit": true,
+      "columns": [
+        "release_mbid",
+        "position"
+      ],
+      "nullsNotDistinct": false,
+      "entityType": "uniques"
+    },
+    {
+      "schema": "public",
+      "table": "tracks",
+      "name": "tracks_release_disc_position_unique",
+      "nameExplicit": true,
+      "columns": [
+        "release_mbid",
+        "disc_number",
+        "position"
+      ],
+      "nullsNotDistinct": false,
+      "entityType": "uniques"
+    },
+    {
+      "schema": "public",
+      "table": "releases",
+      "name": "releases_release_group_mbid_key",
+      "nameExplicit": false,
+      "columns": [
+        "release_group_mbid"
+      ],
+      "nullsNotDistinct": false,
+      "entityType": "uniques"
+    },
+    {
+      "schema": "public",
+      "table": "artists",
+      "name": "artists_start_date_check",
+      "value": "\"start_date\" ~ '^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$'",
+      "entityType": "checks"
+    },
+    {
+      "schema": "public",
+      "table": "artists",
+      "name": "artists_finish_date_check",
+      "value": "\"finish_date\" ~ '^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$'",
+      "entityType": "checks"
+    },
+    {
+      "schema": "public",
+      "table": "memberships",
+      "name": "memberships_not_self_check",
+      "value": "\"group_mbid\" <> \"member_mbid\"",
+      "entityType": "checks"
+    },
+    {
+      "schema": "public",
+      "table": "memberships",
+      "name": "memberships_start_date_check",
+      "value": "\"start_date\" ~ '^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$'",
+      "entityType": "checks"
+    },
+    {
+      "schema": "public",
+      "table": "memberships",
+      "name": "memberships_finish_date_check",
+      "value": "\"finish_date\" ~ '^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$'",
+      "entityType": "checks"
+    },
+    {
+      "schema": "public",
+      "table": "recordings",
+      "name": "recordings_duration_ms_check",
+      "value": "\"duration_ms\" > 0",
+      "entityType": "checks"
+    },
+    {
+      "schema": "public",
+      "table": "releases",
+      "name": "releases_release_date_check",
+      "value": "\"release_date\" ~ '^[0-9]{4}(-[0-9]{2}(-[0-9]{2})?)?$'",
+      "entityType": "checks"
+    },
+    {
+      "schema": "public",
+      "table": "tracks",
+      "name": "tracks_disc_number_check",
+      "value": "\"disc_number\" >= 1",
+      "entityType": "checks"
+    },
+    {
+      "schema": "public",
+      "table": "tracks",
+      "name": "tracks_position_check",
+      "value": "\"position\" >= 1",
+      "entityType": "checks"
+    }
+  ]
+}
