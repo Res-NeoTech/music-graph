@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1360" height="800" viewBox="0 0 1360 800" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif">
+<rect width="1360" height="800" rx="10" fill="#ffffff"/>
+<text x="28" y="40" font-size="20" font-weight="700" fill="#1d161e">Music Graph — MCD</text>
+<text x="28" y="62" font-size="13" fill="#7a6d7c">Base PostgreSQL (données des pages et recherche)</text>
+<g stroke="#1d161e" stroke-width="1.3" fill="none">
+<line x1="560.0" y1="136.5" x2="560.0" y2="200.0"/>
+<line x1="640.0" y1="136.5" x2="640.0" y2="200.0"/>
+<line x1="365.0" y1="318.0" x2="200.0" y2="316.7" stroke-dasharray="6 4"/>
+<line x1="365.0" y1="318.0" x2="525.0" y2="318.0" stroke-dasharray="6 4"/>
+<line x1="915.0" y1="270.0" x2="675.0" y2="270.0"/>
+<line x1="915.0" y1="270.0" x2="1145.0" y2="270.0"/>
+<line x1="380.0" y1="545.0" x2="525.0" y2="420.0"/>
+<line x1="380.0" y1="545.0" x2="525.0" y2="640.0"/>
+<line x1="812.0" y1="520.0" x2="675.0" y2="420.0"/>
+<line x1="812.0" y1="520.0" x2="675.0" y2="610.0"/>
+<line x1="812.0" y1="520.0" x2="925.0" y2="496.3"/>
+<line x1="1220.0" y1="470.0" x2="1220.0" y2="350.0"/>
+<line x1="1220.0" y1="470.0" x2="1220.0" y2="556.0"/>
+<line x1="915.0" y1="655.0" x2="1145.0" y2="655.0"/>
+<line x1="915.0" y1="655.0" x2="675.0" y2="655.0"/>
+</g>
+<g id="artiste">
+<rect x="525.0" y="200.0" width="150.0" height="249.0" rx="6" fill="#ffffff"/>
+<path d="M525.0,230.0 V206.0 Q525.0,200.0 531.0,200.0 H669.0 Q675.0,200.0 675.0,206.0 V230.0 Z" fill="#a50036"/>
+<rect x="525.0" y="200.0" width="150.0" height="249.0" rx="6" fill="none" stroke="#1d161e" stroke-width="1.5"/>
+<text x="600.0" y="216.0" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">ARTISTE</text>
+<text x="539.0" y="245.5" font-size="13" font-weight="600" fill="#1d161e" text-anchor="start" dominant-baseline="central">mbid</text>
+<line x1="539.0" y1="253.5" x2="566.7" y2="253.5" stroke="#1d161e" stroke-width="1"/>
+<text x="539.0" y="264.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">nom</text>
+<text x="539.0" y="283.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">nom_tri</text>
+<text x="539.0" y="302.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">type</text>
+<text x="539.0" y="321.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">pays</text>
+<text x="539.0" y="340.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">date_début</text>
+<text x="539.0" y="359.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">date_fin</text>
+<text x="539.0" y="378.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">désambiguïsation</text>
+<text x="539.0" y="397.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">statut_import</text>
+<text x="539.0" y="416.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">erreur_import</text>
+<text x="539.0" y="435.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">date_import</text>
+</g>
+<g id="album">
+<rect x="1145.0" y="196.0" width="150.0" height="154.0" rx="6" fill="#ffffff"/>
+<path d="M1145.0,226.0 V202.0 Q1145.0,196.0 1151.0,196.0 H1289.0 Q1295.0,196.0 1295.0,202.0 V226.0 Z" fill="#a50036"/>
+<rect x="1145.0" y="196.0" width="150.0" height="154.0" rx="6" fill="none" stroke="#1d161e" stroke-width="1.5"/>
+<text x="1220.0" y="212.0" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">ALBUM</text>
+<text x="1159.0" y="241.5" font-size="13" font-weight="600" fill="#1d161e" text-anchor="start" dominant-baseline="central">mbid</text>
+<line x1="1159.0" y1="249.5" x2="1186.7" y2="249.5" stroke="#1d161e" stroke-width="1"/>
+<text x="1159.0" y="260.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">mbid_groupe</text>
+<text x="1159.0" y="279.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">titre</text>
+<text x="1159.0" y="298.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">type</text>
+<text x="1159.0" y="317.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">date_sortie</text>
+<text x="1159.0" y="336.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">a_pochette</text>
+</g>
+<g id="piste">
+<rect x="1145.0" y="556.0" width="150.0" height="135.0" rx="6" fill="#ffffff"/>
+<path d="M1145.0,586.0 V562.0 Q1145.0,556.0 1151.0,556.0 H1289.0 Q1295.0,556.0 1295.0,562.0 V586.0 Z" fill="#a50036"/>
+<rect x="1145.0" y="556.0" width="150.0" height="135.0" rx="6" fill="none" stroke="#1d161e" stroke-width="1.5"/>
+<text x="1220.0" y="572.0" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">PISTE</text>
+<text x="1159.0" y="601.5" font-size="13" font-weight="600" fill="#1d161e" text-anchor="start" dominant-baseline="central">mbid</text>
+<line x1="1159.0" y1="609.5" x2="1186.7" y2="609.5" stroke="#1d161e" stroke-width="1"/>
+<text x="1159.0" y="620.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">numéro_disque</text>
+<text x="1159.0" y="639.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">position</text>
+<text x="1159.0" y="658.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">titre</text>
+<text x="1159.0" y="677.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">durée</text>
+</g>
+<g id="morceau">
+<rect x="525.0" y="590.0" width="150.0" height="116.0" rx="6" fill="#ffffff"/>
+<path d="M525.0,620.0 V596.0 Q525.0,590.0 531.0,590.0 H669.0 Q675.0,590.0 675.0,596.0 V620.0 Z" fill="#a50036"/>
+<rect x="525.0" y="590.0" width="150.0" height="116.0" rx="6" fill="none" stroke="#1d161e" stroke-width="1.5"/>
+<text x="600.0" y="606.0" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">MORCEAU</text>
+<text x="539.0" y="635.5" font-size="13" font-weight="600" fill="#1d161e" text-anchor="start" dominant-baseline="central">mbid</text>
+<line x1="539.0" y1="643.5" x2="566.7" y2="643.5" stroke="#1d161e" stroke-width="1"/>
+<text x="539.0" y="654.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">titre</text>
+<text x="539.0" y="673.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">durée</text>
+<text x="539.0" y="692.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">désambiguïsation</text>
+</g>
+<g id="role">
+<rect x="925.0" y="432.0" width="150.0" height="97.0" rx="6" fill="#ffffff"/>
+<path d="M925.0,462.0 V438.0 Q925.0,432.0 931.0,432.0 H1069.0 Q1075.0,432.0 1075.0,438.0 V462.0 Z" fill="#a50036"/>
+<rect x="925.0" y="432.0" width="150.0" height="97.0" rx="6" fill="none" stroke="#1d161e" stroke-width="1.5"/>
+<text x="1000.0" y="448.0" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">RÔLE</text>
+<text x="939.0" y="477.5" font-size="13" font-weight="600" fill="#1d161e" text-anchor="start" dominant-baseline="central">code</text>
+<line x1="939.0" y1="485.5" x2="967.0" y2="485.5" stroke="#1d161e" stroke-width="1"/>
+<text x="939.0" y="496.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">libellé</text>
+<text x="939.0" y="515.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">catégorie</text>
+</g>
+<g id="utilisateur">
+<rect x="40.0" y="258.0" width="160.0" height="116.0" rx="6" fill="#ffffff"/>
+<path d="M40.0,288.0 V264.0 Q40.0,258.0 46.0,258.0 H194.0 Q200.0,258.0 200.0,264.0 V288.0 Z" fill="#7a6d7c"/>
+<rect x="40.0" y="258.0" width="160.0" height="116.0" rx="6" fill="none" stroke="#7a6d7c" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="120.0" y="274.0" font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="central">UTILISATEUR</text>
+<text x="54.0" y="303.5" font-size="13" font-weight="600" fill="#1d161e" text-anchor="start" dominant-baseline="central">id</text>
+<line x1="54.0" y1="311.5" x2="61.7" y2="311.5" stroke="#1d161e" stroke-width="1"/>
+<text x="54.0" y="322.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">email</text>
+<text x="54.0" y="341.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">mot_de_passe_hash</text>
+<text x="54.0" y="360.5" font-size="13" font-weight="400" fill="#1d161e" text-anchor="start" dominant-baseline="central">date_création</text>
+</g>
+<g id="membre">
+<rect x="525.0" y="47.5" width="150.0" height="89.0" rx="17" fill="#fff1f2" stroke="#a50036" stroke-width="1.5"/>
+<text x="600.0" y="64.5" font-size="13" font-weight="700" fill="#a50036" text-anchor="middle" dominant-baseline="central">ÊTRE MEMBRE</text>
+<line x1="535.0" y1="77.5" x2="665.0" y2="77.5" stroke="#a50036" stroke-width="0.8" opacity="0.6"/>
+<text x="600.0" y="90.0" font-size="12.5" font-weight="400" fill="#1d161e" text-anchor="middle" dominant-baseline="central">date_début</text>
+<text x="600.0" y="107.0" font-size="12.5" font-weight="400" fill="#1d161e" text-anchor="middle" dominant-baseline="central">date_fin</text>
+<text x="600.0" y="124.0" font-size="12.5" font-weight="400" fill="#1d161e" text-anchor="middle" dominant-baseline="central">précision</text>
+</g>
+<g id="favori">
+<rect x="270.0" y="290.5" width="190.0" height="55.0" rx="17" fill="#f7f4f7" stroke="#7a6d7c" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="365.0" y="307.5" font-size="13" font-weight="700" fill="#7a6d7c" text-anchor="middle" dominant-baseline="central">METTRE EN FAVORI</text>
+<line x1="280.0" y1="320.5" x2="450.0" y2="320.5" stroke="#7a6d7c" stroke-width="0.8" opacity="0.6"/>
+<text x="365.0" y="333.0" font-size="12.5" font-weight="400" fill="#1d161e" text-anchor="middle" dominant-baseline="central">date_ajout</text>
+</g>
+<g id="signer">
+<rect x="860.0" y="225.5" width="110.0" height="89.0" rx="17" fill="#fff1f2" stroke="#a50036" stroke-width="1.5"/>
+<text x="915.0" y="242.5" font-size="13" font-weight="700" fill="#a50036" text-anchor="middle" dominant-baseline="central">SIGNER</text>
+<line x1="870.0" y1="255.5" x2="960.0" y2="255.5" stroke="#a50036" stroke-width="0.8" opacity="0.6"/>
+<text x="915.0" y="268.0" font-size="12.5" font-weight="400" fill="#1d161e" text-anchor="middle" dominant-baseline="central">position</text>
+<text x="915.0" y="285.0" font-size="12.5" font-weight="400" fill="#1d161e" text-anchor="middle" dominant-baseline="central">nom_crédité</text>
+<text x="915.0" y="302.0" font-size="12.5" font-weight="400" fill="#1d161e" text-anchor="middle" dominant-baseline="central">liaison</text>
+</g>
+<g id="interpreter">
+<rect x="305.0" y="500.5" width="150.0" height="89.0" rx="17" fill="#fff1f2" stroke="#a50036" stroke-width="1.5"/>
+<text x="380.0" y="517.5" font-size="13" font-weight="700" fill="#a50036" text-anchor="middle" dominant-baseline="central">INTERPRÉTER</text>
+<line x1="315.0" y1="530.5" x2="445.0" y2="530.5" stroke="#a50036" stroke-width="0.8" opacity="0.6"/>
+<text x="380.0" y="543.0" font-size="12.5" font-weight="400" fill="#1d161e" text-anchor="middle" dominant-baseline="central">position</text>
+<text x="380.0" y="560.0" font-size="12.5" font-weight="400" fill="#1d161e" text-anchor="middle" dominant-baseline="central">nom_crédité</text>
+<text x="380.0" y="577.0" font-size="12.5" font-weight="400" fill="#1d161e" text-anchor="middle" dominant-baseline="central">liaison</text>
+</g>
+<g id="crediter">
+<rect x="752.0" y="492.5" width="120.0" height="55.0" rx="17" fill="#fff1f2" stroke="#a50036" stroke-width="1.5"/>
+<text x="812.0" y="509.5" font-size="13" font-weight="700" fill="#a50036" text-anchor="middle" dominant-baseline="central">CRÉDITER</text>
+<line x1="762.0" y1="522.5" x2="862.0" y2="522.5" stroke="#a50036" stroke-width="0.8" opacity="0.6"/>
+<text x="812.0" y="535.0" font-size="12.5" font-weight="400" fill="#1d161e" text-anchor="middle" dominant-baseline="central">précision</text>
+</g>
+<g id="comporter">
+<rect x="1155.0" y="453.0" width="130.0" height="34.0" rx="17" fill="#fff1f2" stroke="#a50036" stroke-width="1.5"/>
+<text x="1220.0" y="470.0" font-size="13" font-weight="700" fill="#a50036" text-anchor="middle" dominant-baseline="central">COMPORTER</text>
+</g>
+<g id="correspondre">
+<rect x="835.0" y="638.0" width="160.0" height="34.0" rx="17" fill="#fff1f2" stroke="#a50036" stroke-width="1.5"/>
+<text x="915.0" y="655.0" font-size="13" font-weight="700" fill="#a50036" text-anchor="middle" dominant-baseline="central">CORRESPONDRE</text>
+</g>
+<text x="548.0" y="183.0" font-size="13" font-weight="700" fill="#1d161e" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">0,n</text>
+<text x="544.0" y="158.0" font-size="12" font-weight="400" fill="#7a6d7c" text-anchor="middle" dominant-baseline="central" font-style="italic" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">membre</text>
+<text x="652.0" y="183.0" font-size="13" font-weight="700" fill="#1d161e" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">0,n</text>
+<text x="656.0" y="158.0" font-size="12" font-weight="400" fill="#7a6d7c" text-anchor="middle" dominant-baseline="central" font-style="italic" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">groupe</text>
+<text x="217.1" y="304.8" font-size="13" font-weight="700" fill="#1d161e" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">0,n</text>
+<text x="508.0" y="330.0" font-size="13" font-weight="700" fill="#1d161e" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">0,n</text>
+<text x="692.0" y="258.0" font-size="13" font-weight="700" fill="#1d161e" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">0,n</text>
+<text x="1128.0" y="282.0" font-size="13" font-weight="700" fill="#1d161e" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">1,n</text>
+<text x="504.3" y="422.0" font-size="13" font-weight="700" fill="#1d161e" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">0,n</text>
+<text x="504.2" y="640.7" font-size="13" font-weight="700" fill="#1d161e" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">1,n</text>
+<text x="695.8" y="420.3" font-size="13" font-weight="700" fill="#1d161e" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">0,n</text>
+<text x="682.6" y="590.6" font-size="13" font-weight="700" fill="#1d161e" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">0,n</text>
+<text x="910.8" y="511.5" font-size="13" font-weight="700" fill="#1d161e" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">0,n</text>
+<text x="1208.0" y="367.0" font-size="13" font-weight="700" fill="#1d161e" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">1,n</text>
+<text x="1232.0" y="539.0" font-size="13" font-weight="700" fill="#1d161e" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">1,1</text>
+<text x="1128.0" y="667.0" font-size="13" font-weight="700" fill="#1d161e" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">1,1</text>
+<text x="692.0" y="643.0" font-size="13" font-weight="700" fill="#1d161e" text-anchor="middle" dominant-baseline="central" paint-order="stroke" stroke="#ffffff" stroke-width="4" stroke-linejoin="round">1,n</text>
+<line x1="28" y1="726" x2="1332" y2="726" stroke="#e8e1e8" stroke-width="1"/>
+<text x="28.0" y="748.0" font-size="12.5" font-weight="400" fill="#7a6d7c" text-anchor="start" dominant-baseline="central">Identifiant souligné · (min,max) = cardinalités · pointillés = optionnel (B7 : comptes et favoris)</text>
+<text x="28.0" y="770.0" font-size="12.5" font-weight="400" fill="#7a6d7c" text-anchor="start" dominant-baseline="central">ALBUM = release MusicBrainz · MORCEAU = recording · PISTE = track · tous les mbid sont les identifiants MusicBrainz (UUID)</text>
+</svg>
