@@ -1,0 +1,41 @@
+{
+  "brand": "Music Graph",
+  "tagline": "Explorer les liens entre artistes",
+  "brief": "Application web qui rend visibles les liens entre artistes (qui a joué, produit ou collaboré avec qui) sous forme de graphe navigable, et trouve le plus court chemin entre deux artistes, à partir des données ouvertes de MusicBrainz.",
+  "adjectives": ["curieux", "connecté", "précis", "nocturne"],
+  "criteria": "Réussite : lisible à 16 px, distinct des logos de musique (notes, ondes, casques) et de graphe (nœuds génériques), fonctionne en une couleur, sur le fond sombre #1d161e comme sur fond clair.",
+  "industry": "saas",
+  "mockups": ["website", "favicon-tab", "app-icon", "readme", "social", "sticker"],
+  "nav": ["Recherche", "Graphe", "Chemin"],
+  "brand_color": "#a50036",
+  "greyscale": false,
+  "final": true,
+  "designer": "Maksym · projet CFC Informaticien",
+  "round": 2,
+  "concepts": [
+    {
+      "name": "Liaisons",
+      "symbol": "../svg/music-graph-symbole.svg",
+      "lockup": "../svg/music-graph-logo.svg",
+      "stacked": "../svg/music-graph-logo-vertical.svg",
+      "avatar": "../svg/music-graph-tuile.svg",
+      "symbol_on_tile": "../svg/music-graph-symbole-fond-sombre.svg",
+      "symbol_on_dark": "../svg/music-graph-tuile.svg",
+      "lockup_on_dark": "../svg/music-graph-logo-fond-sombre.svg",
+      "stacked_on_dark": "../svg/music-graph-logo-vertical-fond-sombre.svg",
+      "idea": "Le m de music est formé de trois notes reliées par deux arcs : en musique des liaisons, en théorie des graphes des arêtes entre trois artistes.",
+      "rationale": [
+        "Trois lectures en une forme : une lettre, trois notes, un graphe",
+        "Aucune ressemblance avec les logos du secteur (test comparatif)",
+        "Géométrie paramétrée par l'épaisseur du trait ; logotype en Instrument Sans, la police de l'application",
+        "Couleurs reprises du thème : #a50036 sur #1d161e, avec #fff1f2 pour le contraste"
+      ]
+    }
+  ],
+  "recommendation": "Version retenue : « Liaisons ». Utiliser la tuile #a50036 sur fond sombre et le symbole #a50036 sur fond clair.",
+  "next_steps": [
+    "Copier logo/web/ dans le projet (favicon, icônes, manifest, image de partage)",
+    "Utiliser le composant MusicGraphLogo dans l'en-tête du site",
+    "Respecter le guide logo/README.md (zone de protection, tailles minimales, couleurs)"
+  ]
+}
