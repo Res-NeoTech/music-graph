@@ -278,6 +278,11 @@ def union(*boites):
 
 
 def trouver_police():
+    # sans brotli, fontTools ne lit aucun .woff2 : on le dit plutôt que d'annoncer une police introuvable
+    try:
+        import brotli  # noqa: F401
+    except ImportError:
+        raise SystemExit("Le paquet brotli manque (lecture des .woff2) : pip install brotli")
     for p in glob.glob(os.path.join(PROJET, ".next", "**", "media", "*.woff2"), recursive=True):
         try:
             tt = TTFont(p)
@@ -374,13 +379,13 @@ def main():
     d_txt, _ = logotype(p_sombre, "music graph", fs * k, x0 + cote * k + 0.30 * fs * k, y_base)
     p_desc = Police(chemin_police, 400)
     desc = dict(note=False, interlettrage=0, espace=None)
-    d_desc, bd = logotype(p_desc, "Explorer les liens entre artistes", 34, 0, 0, **desc)
-    d_desc, bd = logotype(p_desc, "Explorer les liens entre artistes", 34, (W - (bd[2] - bd[0])) / 2 - bd[0],
+    d_desc, bd = logotype(p_desc, "Explore connections between artists", 34, 0, 0, **desc)
+    d_desc, bd = logotype(p_desc, "Explore connections between artists", 34, (W - (bd[2] - bd[0])) / 2 - bd[0],
                           y_base + 120, **desc)
     fond = Place([("rect", 0, 0, W, H)], 1, 0, 0)
     ecrire("src/raster/opengraph-image.svg",
            svg([(fond.d, AUBERGINE), (t_og.d, CRAMOISI), (m_og.d, ROSE_CLAIR), (d_txt, ROSE_CLAIR), (d_desc, GRIS_ROSE)],
-               (0, 0, W, H), "Music Graph : explorer les liens entre artistes"))
+               (0, 0, W, H), "Music Graph : explore connections between artists"))
 
     # -- composant React (logo horizontal + icône), chemins arrondis au dixième
     def court(d):
