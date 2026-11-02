@@ -32,7 +32,7 @@ export const metadata: Metadata = {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'My Website preview image',
+        alt: 'Music Graph : explore connections between artists',
       },
     ],
     locale: 'en_US',
@@ -43,7 +43,14 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Music Graph",
     description: "Web application for exploring connections between artists in the form of a graph.",
-    images: [ '/og-image.png' ],
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Music Graph : explore connections between artists',
+      },
+    ],
   },
 
   robots: {
