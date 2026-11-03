@@ -2,6 +2,11 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { MusicGraphLogo } from "@/components/music-graph-logo";
 import { House } from "lucide-react";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Not Found"
+};
 
 export default function NotFound() {
     return (
