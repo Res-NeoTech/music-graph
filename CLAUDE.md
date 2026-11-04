@@ -118,11 +118,9 @@ Ne pas implémenter : paroles, lecture audio, recommandations, interface d'admin
 
 Docker (`compose.yaml`) ne contient que PostgreSQL 18 et ArangoDB 3.12 ; Next.js et le script d'import tournent sur l'hôte. PostgreSQL est exposé sur **5433** (5432 est pris par un autre projet), ArangoDB sur 8529 (interface web : http://localhost:8529). Ports liés à `127.0.0.1` uniquement.
 
-Pas encore en place (à compléter lors de leur mise en place) :
-
-- Migrations : <!-- TODO : Drizzle pas encore installé -->
-- Import : <!-- TODO : script d'import pas encore écrit -->
-- Tests : <!-- TODO : Vitest pas encore installé ; prévoir aussi la commande pour un seul fichier, ex. `npx vitest run <fichier>` -->
+- Migrations : `npm run generate` après une modification de `lib/db/postgres/schema.ts`, puis `npm run migrate`. Migration SQL écrite à la main : `npx drizzle-kit generate --custom --name=<nom>` (ex. `seed_roles`, qui remplit la table `roles`).
+- Import : `npm run import` (tout `import/corpus.ts`), `npm run import -- --failed` (rejouer les échecs, reprendre après interruption), `npm run import -- --artist <mbid>` (un artiste, option répétable). Lancé avec `tsx --env-file=.env` ; exige `MUSICBRAINZ_CONTACT` et un compte ArangoDB qui peut créer la base (`root`).
+- Tests : `npx vitest run` (une fois), `npm test` (mode watch), un seul fichier : `npx vitest run <fichier>`. Les `*.test.ts` tournent dans Node, les `*.test.tsx` dans jsdom. Fixtures MusicBrainz : `tests/fixtures/musicbrainz/` (vraies réponses réduites).
 
 ## Conventions
 
