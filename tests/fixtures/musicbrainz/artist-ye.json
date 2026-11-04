@@ -1,0 +1,195 @@
+{
+  "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+  "name": "Ye",
+  "sort-name": "Ye",
+  "type": "Person",
+  "country": "US",
+  "disambiguation": "formerly Kanye West",
+  "life-span": {
+    "begin": "1977-06-08",
+    "end": null,
+    "ended": false
+  },
+  "relations": [
+    {
+      "type": "member of band",
+      "target-type": "artist",
+      "direction": "forward",
+      "attributes": [],
+      "begin": "2007",
+      "end": "2013-07-25",
+      "ended": true,
+      "artist": {
+        "id": "9563442b-69e2-43cf-8012-3c9371f174cb",
+        "name": "Child Rebel Soldier",
+        "sort-name": "Child Rebel Soldier",
+        "type": "Group",
+        "country": "US",
+        "disambiguation": ""
+      }
+    },
+    {
+      "type": "member of band",
+      "target-type": "artist",
+      "direction": "forward",
+      "attributes": [
+        "original"
+      ],
+      "begin": "2018",
+      "end": "2022",
+      "ended": true,
+      "artist": {
+        "id": "793e220b-64f8-46d9-954d-e033dbcfeef4",
+        "name": "KIDS SEE GHOSTS",
+        "sort-name": "KIDS SEE GHOSTS",
+        "type": "Group",
+        "country": "US",
+        "disambiguation": "Kanye West & Kid Cudi"
+      }
+    },
+    {
+      "type": "member of band",
+      "target-type": "artist",
+      "direction": "forward",
+      "attributes": [
+        "original"
+      ],
+      "begin": "2023",
+      "end": null,
+      "ended": false,
+      "artist": {
+        "id": "58daf317-be5f-439f-a04d-0d6727f1a3b2",
+        "name": "¥$",
+        "sort-name": "¥$",
+        "type": "Group",
+        "country": "US",
+        "disambiguation": "Ye & Ty Dolla $ign"
+      }
+    },
+    {
+      "type": "member of band",
+      "target-type": "artist",
+      "direction": "forward",
+      "attributes": [],
+      "begin": null,
+      "end": null,
+      "ended": false,
+      "artist": {
+        "id": "33cfd8a2-85de-4b0a-9acd-bd8ba91df3a0",
+        "name": "Go Getters",
+        "sort-name": "Go Getters",
+        "type": "Group",
+        "country": "US",
+        "disambiguation": "Kanye West's first group"
+      }
+    },
+    {
+      "type": "member of band",
+      "target-type": "artist",
+      "direction": "forward",
+      "attributes": [],
+      "begin": null,
+      "end": null,
+      "ended": false,
+      "artist": {
+        "id": "6c37f6ee-172a-454a-ad74-4005535a260e",
+        "name": "Sunday Service Choir",
+        "sort-name": "Sunday Service Choir",
+        "type": "Group",
+        "country": "US",
+        "disambiguation": "gospel group led by Ye"
+      }
+    },
+    {
+      "type": "member of band",
+      "target-type": "artist",
+      "direction": "forward",
+      "attributes": [],
+      "begin": null,
+      "end": null,
+      "ended": false,
+      "artist": {
+        "id": "f8c4a5e7-4697-4bd3-90bd-04d092508738",
+        "name": "Roc-A-Fella Family",
+        "sort-name": "Roc-A-Fella Family",
+        "type": "Group",
+        "country": null,
+        "disambiguation": ""
+      }
+    },
+    {
+      "type": "member of band",
+      "target-type": "artist",
+      "direction": "forward",
+      "attributes": [],
+      "begin": null,
+      "end": null,
+      "ended": false,
+      "artist": {
+        "id": "bb637e2e-64a8-4ecb-81ac-bf492fb48f04",
+        "name": "Madvillainz",
+        "sort-name": "Madvillainz",
+        "type": "Group",
+        "country": "US",
+        "disambiguation": "Madlib, MF DOOM, and (allegedly) Kanye West"
+      }
+    },
+    {
+      "type": "member of band",
+      "target-type": "artist",
+      "direction": "forward",
+      "attributes": [
+        "original",
+        "principal",
+        "task"
+      ],
+      "begin": null,
+      "end": null,
+      "ended": false,
+      "artist": {
+        "id": "11b534f4-006f-493e-a873-ebc34a536030",
+        "name": "The Hooligans",
+        "sort-name": "Hooligans, The",
+        "type": "Choir",
+        "country": "US",
+        "disambiguation": "aka Hooligan Choir; directed by Kanye West"
+      }
+    },
+    {
+      "type": "member of band",
+      "target-type": "artist",
+      "direction": "forward",
+      "attributes": [],
+      "begin": null,
+      "end": null,
+      "ended": false,
+      "artist": {
+        "id": "79f591ab-6ab8-41ea-9cab-1c2240cd43fe",
+        "name": "The Throne",
+        "sort-name": "Throne, The",
+        "type": "Group",
+        "country": null,
+        "disambiguation": "Jay Z and Kanye West"
+      }
+    },
+    {
+      "type": "instrumental supporting musician",
+      "target-type": "artist",
+      "direction": "backward",
+      "attributes": [
+        "turntable"
+      ],
+      "begin": "2006",
+      "end": "2014",
+      "ended": true,
+      "artist": {
+        "id": "3e98b1e7-7fb0-44ae-9ba9-ba0f154d9d3d",
+        "name": "Million Dollar Mano",
+        "sort-name": "Million Dollar Mano",
+        "type": "Person",
+        "country": "US",
+        "disambiguation": ""
+      }
+    }
+  ]
+}

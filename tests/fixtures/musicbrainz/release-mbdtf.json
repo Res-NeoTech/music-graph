@@ -1,0 +1,1975 @@
+{
+  "id": "cd474271-bd7a-4d53-ba9e-e9d5bd7958cb",
+  "title": "My Beautiful Dark Twisted Fantasy",
+  "status": "Official",
+  "date": "2010-11-19",
+  "disambiguation": "deluxe edition with DVD",
+  "cover-art-archive": {
+    "front": true
+  },
+  "release-group": {
+    "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+    "title": "My Beautiful Dark Twisted Fantasy",
+    "primary-type": "Album",
+    "secondary-types": [],
+    "first-release-date": "2010-11-19"
+  },
+  "artist-credit": [
+    {
+      "name": "Kanye West",
+      "joinphrase": "",
+      "artist": {
+        "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+        "name": "Ye",
+        "sort-name": "Ye",
+        "type": "Person",
+        "country": "US",
+        "disambiguation": "formerly Kanye West"
+      }
+    }
+  ],
+  "relations": [],
+  "media": [
+    {
+      "position": 1,
+      "format": "CD",
+      "tracks": [
+        {
+          "id": "a4b82044-22bf-46db-81b6-cfe977395c38",
+          "number": "1",
+          "position": 1,
+          "title": "Dark Fantasy",
+          "length": 280786,
+          "recording": {
+            "id": "885ccb38-4057-4d1a-8fb0-52804f79d653",
+            "title": "Dark Fantasy",
+            "length": 280786,
+            "disambiguation": "explicit",
+            "artist-credit": [
+              {
+                "name": "Kanye West",
+                "joinphrase": "",
+                "artist": {
+                  "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+                  "name": "Ye",
+                  "sort-name": "Ye",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "formerly Kanye West"
+                }
+              }
+            ],
+            "relations": [
+              {
+                "type": "instrument",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "cello",
+                  "keyboard"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "a2fdc044-010f-4317-97d2-a1c67e978543",
+                  "name": "Jeff Bhasker",
+                  "sort-name": "Bhasker, Jeff",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "instrument",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "cello"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "0fc745df-eb53-4035-94e5-3c407f9f3062",
+                  "name": "Chris “Hitchcock” Chorney",
+                  "sort-name": "Chorney, Chris “Hitchcock”",
+                  "type": "Person",
+                  "country": null,
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "instrument",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "cello",
+                  "piano"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "73e36439-1e9a-4925-bf2c-1d7f7885fbb0",
+                  "name": "Mike Dean",
+                  "sort-name": "Dean, Mike",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "US “dirty south” hip‐hop producer & mix engineer"
+                }
+              },
+              {
+                "type": "mix",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "90b8de7b-70eb-4b0c-bf4f-a9addd0fd197",
+                  "name": "Andrew Dawson",
+                  "sort-name": "Dawson, Andrew",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "US mix engineer"
+                }
+              },
+              {
+                "type": "mix",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "73e36439-1e9a-4925-bf2c-1d7f7885fbb0",
+                  "name": "Mike Dean",
+                  "sort-name": "Dean, Mike",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "US “dirty south” hip‐hop producer & mix engineer"
+                }
+              },
+              {
+                "type": "mix",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "assistant"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "fe5a5f52-e6fa-455f-8c37-a17ed80e08d8",
+                  "name": "Gaylord Holomalia",
+                  "sort-name": "Holomalia, Gaylord",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "mix",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "assistant"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "5750f133-b4d9-4715-bb85-4ba419ab41cb",
+                  "name": "Phil Joly",
+                  "sort-name": "Joly, Phil",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "mix",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "assistant"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "d22e2371-b891-42ae-a355-5e82d2d718e4",
+                  "name": "Christian Mochizuki",
+                  "sort-name": "Mochizuki, Christian",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "producer",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "additional"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "a2fdc044-010f-4317-97d2-a1c67e978543",
+                  "name": "Jeff Bhasker",
+                  "sort-name": "Bhasker, Jeff",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "producer",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "additional"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "73e36439-1e9a-4925-bf2c-1d7f7885fbb0",
+                  "name": "Mike Dean",
+                  "sort-name": "Dean, Mike",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "US “dirty south” hip‐hop producer & mix engineer"
+                }
+              },
+              {
+                "type": "producer",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "1cd913a1-5641-4b2a-9624-a0417914e3e7",
+                  "name": "No I.D.",
+                  "sort-name": "No I.D.",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "producer"
+                }
+              },
+              {
+                "type": "producer",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "29c28ac3-27c5-4822-8eb6-0af89a3a7240",
+                  "name": "RZA",
+                  "sort-name": "RZA",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "American rapper and actor"
+                }
+              },
+              {
+                "type": "producer",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+                  "name": "Ye",
+                  "sort-name": "Ye",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "formerly Kanye West"
+                }
+              },
+              {
+                "type": "recording",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "90b8de7b-70eb-4b0c-bf4f-a9addd0fd197",
+                  "name": "Andrew Dawson",
+                  "sort-name": "Dawson, Andrew",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "US mix engineer"
+                }
+              },
+              {
+                "type": "recording",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "73e36439-1e9a-4925-bf2c-1d7f7885fbb0",
+                  "name": "Mike Dean",
+                  "sort-name": "Dean, Mike",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "US “dirty south” hip‐hop producer & mix engineer"
+                }
+              },
+              {
+                "type": "recording",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "acae00f3-fbf3-440a-9e9e-5e8b75ac3b3e",
+                  "name": "Anthony Kilhoffer",
+                  "sort-name": "Kilhoffer, Anthony",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "vocal",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "background vocals"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "1036b808-f58c-4a3e-b461-a2c4492ecf1b",
+                  "name": "Nicki Minaj",
+                  "sort-name": "Minaj, Nicki",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "vocal",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "additional"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "80ff1c00-d064-4887-ae07-81c01cbc2fdc",
+                  "name": "Amber Rose",
+                  "sort-name": "Rose, Amber",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "vocal",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "additional"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "c7eb03c1-f8cb-4815-afc8-46df3b253129",
+                  "name": "Teyana Taylor",
+                  "sort-name": "Taylor, Teyana",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "vocal",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "background vocals"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "0f1d5b01-8784-4870-9bd6-fa43178b9441",
+                  "name": "Justin Vernon",
+                  "sort-name": "Vernon, Justin",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "performance",
+                "target-type": "work",
+                "direction": "forward",
+                "attributes": [
+                  "live"
+                ],
+                "begin": "2011-04-17",
+                "end": "2011-04-17",
+                "ended": true,
+                "work": {
+                  "id": "e645d015-7561-3768-b107-128f68d22da0",
+                  "title": "Dark Fantasy",
+                  "relations": [
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "24202038-7b02-4444-96c2-cf2fc7b81308",
+                        "name": "Jon Anderson",
+                        "sort-name": "Anderson, Jon",
+                        "type": "Person",
+                        "country": "GB",
+                        "disambiguation": "Yes/Jon & Vangelis"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "a2fdc044-010f-4317-97d2-a1c67e978543",
+                        "name": "Jeff Bhasker",
+                        "sort-name": "Bhasker, Jeff",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": ""
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "73e36439-1e9a-4925-bf2c-1d7f7885fbb0",
+                        "name": "Mike Dean",
+                        "sort-name": "Dean, Mike",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "US “dirty south” hip‐hop producer & mix engineer"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "1cd913a1-5641-4b2a-9624-a0417914e3e7",
+                        "name": "No I.D.",
+                        "sort-name": "No I.D.",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "producer"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "a1684a49-feaa-4150-b758-d9412fc59f12",
+                        "name": "Mike Oldfield",
+                        "sort-name": "Oldfield, Mike",
+                        "type": "Person",
+                        "country": "GB",
+                        "disambiguation": "English musician, songwriter and producer"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "29c28ac3-27c5-4822-8eb6-0af89a3a7240",
+                        "name": "RZA",
+                        "sort-name": "RZA",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "American rapper and actor"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+                        "name": "Ye",
+                        "sort-name": "Ye",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "formerly Kanye West"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "64b15912-5f96-45cb-9514-3943d1b0f220",
+                        "name": "Malik Yusef",
+                        "sort-name": "Yusef, Malik",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": ""
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "52a17088-9690-4703-8910-35480aa0a8d0",
+          "number": "2",
+          "position": 2,
+          "title": "Gorgeous",
+          "length": 357653,
+          "recording": {
+            "id": "b3c6aa0a-6960-4db6-bf27-ed50de88309c",
+            "title": "Gorgeous",
+            "length": 357653,
+            "disambiguation": "explicit",
+            "artist-credit": [
+              {
+                "name": "Kanye West",
+                "joinphrase": " feat. ",
+                "artist": {
+                  "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+                  "name": "Ye",
+                  "sort-name": "Ye",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "formerly Kanye West"
+                }
+              },
+              {
+                "name": "Kid Cudi",
+                "joinphrase": " & ",
+                "artist": {
+                  "id": "e0e1db18-f7ba-4dee-95ff-7ae8cf545460",
+                  "name": "Kid Cudi",
+                  "sort-name": "Kid Cudi",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "name": "Raekwon",
+                "joinphrase": "",
+                "artist": {
+                  "id": "4e954b02-fae2-4bd7-9547-e055a6ac0527",
+                  "name": "Raekwon",
+                  "sort-name": "Raekwon",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "US rapper, Wu‐Tang Clan"
+                }
+              }
+            ],
+            "relations": [
+              {
+                "type": "instrument",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "cello"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "0fc745df-eb53-4035-94e5-3c407f9f3062",
+                  "name": "Chris “Hitchcock” Chorney",
+                  "sort-name": "Chorney, Chris “Hitchcock”",
+                  "type": "Person",
+                  "country": null,
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "instrument",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "guitar",
+                  "solo"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "73e36439-1e9a-4925-bf2c-1d7f7885fbb0",
+                  "name": "Mike Dean",
+                  "sort-name": "Dean, Mike",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "US “dirty south” hip‐hop producer & mix engineer"
+                }
+              },
+              {
+                "type": "instrument",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "bass guitar",
+                  "guitar",
+                  "organ"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "2bdbad13-143b-4791-99da-7a415b516af9",
+                  "name": "Ken Lewis",
+                  "sort-name": "Lewis, Ken",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "record producer, mixing engineer, songwriter, and multi‐instrumentalist"
+                }
+              },
+              {
+                "type": "mix",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "assistant"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "49c19ad1-eca8-4a0d-99b3-645df7c83dc4",
+                  "name": "Pete Bischoff",
+                  "sort-name": "Bischoff, Pete",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "mix",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "assistant"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "5750f133-b4d9-4715-bb85-4ba419ab41cb",
+                  "name": "Phil Joly",
+                  "sort-name": "Joly, Phil",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "mix",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "acae00f3-fbf3-440a-9e9e-5e8b75ac3b3e",
+                  "name": "Anthony Kilhoffer",
+                  "sort-name": "Kilhoffer, Anthony",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "mix",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "assistant"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "d22e2371-b891-42ae-a355-5e82d2d718e4",
+                  "name": "Christian Mochizuki",
+                  "sort-name": "Mochizuki, Christian",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "producer",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "73e36439-1e9a-4925-bf2c-1d7f7885fbb0",
+                  "name": "Mike Dean",
+                  "sort-name": "Dean, Mike",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "US “dirty south” hip‐hop producer & mix engineer"
+                }
+              },
+              {
+                "type": "producer",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "1cd913a1-5641-4b2a-9624-a0417914e3e7",
+                  "name": "No I.D.",
+                  "sort-name": "No I.D.",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "producer"
+                }
+              },
+              {
+                "type": "producer",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+                  "name": "Ye",
+                  "sort-name": "Ye",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "formerly Kanye West"
+                }
+              },
+              {
+                "type": "programming",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "drum machine",
+                  "keyboard"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "a5c6f645-c4db-4cd3-9129-a3ebe9bbabea",
+                  "name": "Brent Kolatalo",
+                  "sort-name": "Kolatalo, Brent",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "recording",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "90b8de7b-70eb-4b0c-bf4f-a9addd0fd197",
+                  "name": "Andrew Dawson",
+                  "sort-name": "Dawson, Andrew",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "US mix engineer"
+                }
+              },
+              {
+                "type": "recording",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "73e36439-1e9a-4925-bf2c-1d7f7885fbb0",
+                  "name": "Mike Dean",
+                  "sort-name": "Dean, Mike",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "US “dirty south” hip‐hop producer & mix engineer"
+                }
+              },
+              {
+                "type": "recording",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "2dad5809-0d9b-40cf-85cf-2f8828ffaaf0",
+                  "name": "Noah Goldstein",
+                  "sort-name": "Goldstein, Noah",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "R&B record producer, arranger and songwriter"
+                }
+              },
+              {
+                "type": "recording",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "5750f133-b4d9-4715-bb85-4ba419ab41cb",
+                  "name": "Phil Joly",
+                  "sort-name": "Joly, Phil",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "recording",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "acae00f3-fbf3-440a-9e9e-5e8b75ac3b3e",
+                  "name": "Anthony Kilhoffer",
+                  "sort-name": "Kilhoffer, Anthony",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "recording",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "d22e2371-b891-42ae-a355-5e82d2d718e4",
+                  "name": "Christian Mochizuki",
+                  "sort-name": "Mochizuki, Christian",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "vocal",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "guest"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "e0e1db18-f7ba-4dee-95ff-7ae8cf545460",
+                  "name": "Kid Cudi",
+                  "sort-name": "Kid Cudi",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "vocal",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "guest"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "4e954b02-fae2-4bd7-9547-e055a6ac0527",
+                  "name": "Raekwon",
+                  "sort-name": "Raekwon",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "US rapper, Wu‐Tang Clan"
+                }
+              },
+              {
+                "type": "vocal",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "background vocals"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "a42fdc0b-09bc-4a6d-8ae6-db454bf0803a",
+                  "name": "Tony Williams",
+                  "sort-name": "Williams, Tony",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "soul/R&B singer/writer"
+                }
+              },
+              {
+                "type": "performance",
+                "target-type": "work",
+                "direction": "forward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "work": {
+                  "id": "579b12e3-44d6-37bb-8e2a-64f04d9d949b",
+                  "title": "Gorgeous",
+                  "relations": [
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "2b6f3780-6fb6-42c2-95bb-5e080772e38c",
+                        "name": "Gene Clark",
+                        "sort-name": "Clark, Gene",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "US singer-songwriter; founder of The Byrds"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "73e36439-1e9a-4925-bf2c-1d7f7885fbb0",
+                        "name": "Mike Dean",
+                        "sort-name": "Dean, Mike",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "US “dirty south” hip‐hop producer & mix engineer"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "e0e1db18-f7ba-4dee-95ff-7ae8cf545460",
+                        "name": "Kid Cudi",
+                        "sort-name": "Kid Cudi",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": ""
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "6ec7336b-a56a-4b5d-bcec-575d2b8ed4e1",
+                        "name": "Roger McGuinn",
+                        "sort-name": "McGuinn, Roger",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": ""
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "94dbfe2e-ca48-4e08-a5a8-e1e74136c63d",
+                        "name": "Method Man",
+                        "sort-name": "Method Man",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "of the Wu‐Tang Clan"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "1cd913a1-5641-4b2a-9624-a0417914e3e7",
+                        "name": "No I.D.",
+                        "sort-name": "No I.D.",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "producer"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "4e954b02-fae2-4bd7-9547-e055a6ac0527",
+                        "name": "Raekwon",
+                        "sort-name": "Raekwon",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "US rapper, Wu‐Tang Clan"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+                        "name": "Ye",
+                        "sort-name": "Ye",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "formerly Kanye West"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "64b15912-5f96-45cb-9514-3943d1b0f220",
+                        "name": "Malik Yusef",
+                        "sort-name": "Yusef, Malik",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": ""
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "id": "66026ca7-d034-4a52-9934-ffa420168c1c",
+          "number": "3",
+          "position": 3,
+          "title": "Power",
+          "length": 292093,
+          "recording": {
+            "id": "f42e84ef-f23e-4b8c-b3a1-8f407be68ea5",
+            "title": "Power",
+            "length": 292093,
+            "disambiguation": "explicit",
+            "artist-credit": [
+              {
+                "name": "Kanye West",
+                "joinphrase": "",
+                "artist": {
+                  "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+                  "name": "Ye",
+                  "sort-name": "Ye",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "formerly Kanye West"
+                }
+              }
+            ],
+            "relations": [
+              {
+                "type": "engineer",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "a5c6f645-c4db-4cd3-9129-a3ebe9bbabea",
+                  "name": "Brent Kolatalo",
+                  "sort-name": "Kolatalo, Brent",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "engineer",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "2bdbad13-143b-4791-99da-7a415b516af9",
+                  "name": "Ken Lewis",
+                  "sort-name": "Lewis, Ken",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "record producer, mixing engineer, songwriter, and multi‐instrumentalist"
+                }
+              },
+              {
+                "type": "instrument",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "handclaps"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "94f632a0-2214-4fc2-8c60-8151f4989a12",
+                  "name": "Ian Allen",
+                  "sort-name": "Allen, Ian",
+                  "type": "Person",
+                  "country": null,
+                  "disambiguation": "Negativland"
+                }
+              },
+              {
+                "type": "instrument",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "keyboard"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "a2fdc044-010f-4317-97d2-a1c67e978543",
+                  "name": "Jeff Bhasker",
+                  "sort-name": "Bhasker, Jeff",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "instrument",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "cello"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "0fc745df-eb53-4035-94e5-3c407f9f3062",
+                  "name": "Chris “Hitchcock” Chorney",
+                  "sort-name": "Chorney, Chris “Hitchcock”",
+                  "type": "Person",
+                  "country": null,
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "instrument",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "handclaps"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "0815491f-0cac-4099-a117-18d42d6cd25c",
+                  "name": "Wilson Christopher",
+                  "sort-name": "Christopher, Wilson",
+                  "type": "Person",
+                  "country": null,
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "instrument",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "bass",
+                  "guitar",
+                  "keyboard"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "73e36439-1e9a-4925-bf2c-1d7f7885fbb0",
+                  "name": "Mike Dean",
+                  "sort-name": "Dean, Mike",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "US “dirty south” hip‐hop producer & mix engineer"
+                }
+              },
+              {
+                "type": "instrument",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "handclaps"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "3b9b9504-b604-4c97-950b-a39fa6396787",
+                  "name": "Uri Djemal",
+                  "sort-name": "Djemal, Uri",
+                  "type": "Person",
+                  "country": null,
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "instrument",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "handclaps"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "0a8cfc83-0060-481d-a8af-7255ff5b195d",
+                  "name": "Chris Soper",
+                  "sort-name": "Soper, Chris",
+                  "type": "Person",
+                  "country": null,
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "mix",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "assistant"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "190ae10e-44c9-47c2-9d05-09520fcfba41",
+                  "name": "Erik Madrid",
+                  "sort-name": "Madrid, Erik",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "engineer"
+                }
+              },
+              {
+                "type": "mix",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "54c1f74e-2cd7-481d-9d31-7808fc2dbf05",
+                  "name": "Manny Marroquin",
+                  "sort-name": "Marroquin, Manny",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "mix",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "assistant"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "d6982f2c-4cb1-4ec7-b341-12b1aa08c1c1",
+                  "name": "Christian Plata",
+                  "sort-name": "Plata, Christian",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "producer",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "additional"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "a2fdc044-010f-4317-97d2-a1c67e978543",
+                  "name": "Jeff Bhasker",
+                  "sort-name": "Bhasker, Jeff",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "producer",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "additional"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "90b8de7b-70eb-4b0c-bf4f-a9addd0fd197",
+                  "name": "Andrew Dawson",
+                  "sort-name": "Dawson, Andrew",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "US mix engineer"
+                }
+              },
+              {
+                "type": "producer",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "additional"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "73e36439-1e9a-4925-bf2c-1d7f7885fbb0",
+                  "name": "Mike Dean",
+                  "sort-name": "Dean, Mike",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "US “dirty south” hip‐hop producer & mix engineer"
+                }
+              },
+              {
+                "type": "producer",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "21f45372-d089-4766-9343-9dafc079f83d",
+                  "name": "Symbolyc One",
+                  "sort-name": "Symbolyc One",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "producer Larry Griffin, aka S1"
+                }
+              },
+              {
+                "type": "producer",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+                  "name": "Ye",
+                  "sort-name": "Ye",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "formerly Kanye West"
+                }
+              },
+              {
+                "type": "recording",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "90b8de7b-70eb-4b0c-bf4f-a9addd0fd197",
+                  "name": "Andrew Dawson",
+                  "sort-name": "Dawson, Andrew",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "US mix engineer"
+                }
+              },
+              {
+                "type": "recording",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "73e36439-1e9a-4925-bf2c-1d7f7885fbb0",
+                  "name": "Mike Dean",
+                  "sort-name": "Dean, Mike",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "US “dirty south” hip‐hop producer & mix engineer"
+                }
+              },
+              {
+                "type": "recording",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "acae00f3-fbf3-440a-9e9e-5e8b75ac3b3e",
+                  "name": "Anthony Kilhoffer",
+                  "sort-name": "Kilhoffer, Anthony",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "vocal",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "additional"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "808c1fbb-ccfb-4b15-a541-72bec155e696",
+                  "name": "Dwele",
+                  "sort-name": "Dwele",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "vocal",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "other vocals"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "9fa19223-ec32-4da2-b1a2-79ea8afeb17a",
+                  "name": "Alvin Fields",
+                  "sort-name": "Fields, Alvin",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": ""
+                }
+              },
+              {
+                "type": "vocal",
+                "target-type": "artist",
+                "direction": "backward",
+                "attributes": [
+                  "other vocals"
+                ],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "artist": {
+                  "id": "2bdbad13-143b-4791-99da-7a415b516af9",
+                  "name": "Ken Lewis",
+                  "sort-name": "Lewis, Ken",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "record producer, mixing engineer, songwriter, and multi‐instrumentalist"
+                }
+              },
+              {
+                "type": "performance",
+                "target-type": "work",
+                "direction": "forward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "work": {
+                  "id": "57eff194-93a2-324b-92b1-2cb1570e55bf",
+                  "title": "Power",
+                  "relations": [
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "4ed7e5da-c622-41e4-a849-062979b5698f",
+                        "name": "Boris Bergman",
+                        "sort-name": "Bergman, Boris",
+                        "type": "Person",
+                        "country": "FR",
+                        "disambiguation": "French lyricist"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "753deb54-5a00-4552-bab4-c63a98eec171",
+                        "name": "François Bernheim",
+                        "sort-name": "Bernheim, François",
+                        "type": "Person",
+                        "country": "FR",
+                        "disambiguation": ""
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "a2fdc044-010f-4317-97d2-a1c67e978543",
+                        "name": "Jeff Bhasker",
+                        "sort-name": "Bhasker, Jeff",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": ""
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "73e36439-1e9a-4925-bf2c-1d7f7885fbb0",
+                        "name": "Mike Dean",
+                        "sort-name": "Dean, Mike",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "US “dirty south” hip‐hop producer & mix engineer"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "808c1fbb-ccfb-4b15-a541-72bec155e696",
+                        "name": "Dwele",
+                        "sort-name": "Dwele",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": ""
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "e3902857-ae51-4752-967c-0bc722625aa9",
+                        "name": "Jean‐Pierre Lang",
+                        "sort-name": "Lang, Jean‐Pierre",
+                        "type": "Person",
+                        "country": "FR",
+                        "disambiguation": ""
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "2bdbad13-143b-4791-99da-7a415b516af9",
+                        "name": "Ken Lewis",
+                        "sort-name": "Lewis, Ken",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "record producer, mixing engineer, songwriter, and multi‐instrumentalist"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "21f45372-d089-4766-9343-9dafc079f83d",
+                        "name": "Symbolyc One",
+                        "sort-name": "Symbolyc One",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "producer Larry Griffin, aka S1"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+                        "name": "Ye",
+                        "sort-name": "Ye",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "formerly Kanye West"
+                      }
+                    },
+                    {
+                      "type": "medley",
+                      "target-type": "work",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "work": {
+                        "id": "ddac2776-ee54-4de8-9e61-edab4b5d89e1",
+                        "title": "Trapped Inside the Castle Walls"
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "position": 2,
+      "format": "DVD",
+      "tracks": [
+        {
+          "id": "bf290dcf-eb69-488b-852f-67caf414bce8",
+          "number": "1",
+          "position": 1,
+          "title": "Runaway",
+          "length": 2067000,
+          "recording": {
+            "id": "2619bbe9-e40d-4e96-8b5b-a3d9bbe5d7a1",
+            "title": "Runway (film) (album version, edited)",
+            "length": 2067000,
+            "disambiguation": "",
+            "artist-credit": [
+              {
+                "name": "Kanye West",
+                "joinphrase": "",
+                "artist": {
+                  "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+                  "name": "Ye",
+                  "sort-name": "Ye",
+                  "type": "Person",
+                  "country": "US",
+                  "disambiguation": "formerly Kanye West"
+                }
+              }
+            ],
+            "relations": [
+              {
+                "type": "performance",
+                "target-type": "work",
+                "direction": "forward",
+                "attributes": [],
+                "begin": null,
+                "end": null,
+                "ended": false,
+                "work": {
+                  "id": "bd8d153a-afff-30e7-a5e9-7efb62886ecb",
+                  "title": "Runaway",
+                  "relations": [
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "a2fdc044-010f-4317-97d2-a1c67e978543",
+                        "name": "Jeff Bhasker",
+                        "sort-name": "Bhasker, Jeff",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": ""
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "dbf49f65-d014-4100-9d51-cf9cf8df05bf",
+                        "name": "J. Branch",
+                        "sort-name": "Branch, J.",
+                        "type": "Person",
+                        "country": null,
+                        "disambiguation": ""
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "73e36439-1e9a-4925-bf2c-1d7f7885fbb0",
+                        "name": "Mike Dean",
+                        "sort-name": "Dean, Mike",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "US “dirty south” hip‐hop producer & mix engineer"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "d6f3c7d7-3c95-4bf6-8647-0efeec36d704",
+                        "name": "Emile Haynie",
+                        "sort-name": "Haynie, Emile",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "hip hop producer, aka \"Emile\""
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "14ecd19f-7121-4192-8549-e5056241a42f",
+                        "name": "Pusha T",
+                        "sort-name": "Pusha T",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "US rapper Terrence Thornton, member of Clipse"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "164f0d73-1234-4e2c-8743-d77bf2191051",
+                        "name": "Ye",
+                        "sort-name": "Ye",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": "formerly Kanye West"
+                      }
+                    },
+                    {
+                      "type": "writer",
+                      "target-type": "artist",
+                      "direction": "backward",
+                      "attributes": [],
+                      "begin": null,
+                      "end": null,
+                      "ended": false,
+                      "artist": {
+                        "id": "64b15912-5f96-45cb-9514-3943d1b0f220",
+                        "name": "Malik Yusef",
+                        "sort-name": "Yusef, Malik",
+                        "type": "Person",
+                        "country": "US",
+                        "disambiguation": ""
+                      }
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

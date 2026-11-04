@@ -1,0 +1,1116 @@
+{
+  "release-count": 64,
+  "release-offset": 0,
+  "releases": [
+    {
+      "id": "0dc6b658-de04-43d3-8780-3e754141d0b8",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2005-08-30",
+      "disambiguation": "explicit",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "0efc4c73-071c-4388-8456-963d6a62d8c5",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2006-01-18",
+      "disambiguation": "Japanese Import CD with Two Extra Tracks: \"Back to Basics\" & \"We Can Make It Better\"",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "1065bda8-c38f-4824-8ce1-248014836d3f",
+      "title": "The College Dropout",
+      "status": "Official",
+      "date": "2004-02-10",
+      "disambiguation": "explicit",
+      "cover-art-archive": {
+        "front": false
+      },
+      "release-group": {
+        "id": "8a01217e-6947-3927-a39b-6691104694f1",
+        "title": "The College Dropout",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2004-02-09"
+      }
+    },
+    {
+      "id": "11b6532c-0de0-45bb-84fc-7e99514a4cd5",
+      "title": "The College Dropout",
+      "status": "Official",
+      "date": "2004-02-09",
+      "disambiguation": "explicit",
+      "cover-art-archive": {
+        "front": false
+      },
+      "release-group": {
+        "id": "8a01217e-6947-3927-a39b-6691104694f1",
+        "title": "The College Dropout",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2004-02-09"
+      }
+    },
+    {
+      "id": "122942f8-6c9e-4a44-b42c-f34560502d7f",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2005",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": false
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "13412baa-58b1-42fb-a8ed-2236a9792621",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2005-08-29",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "1dc62127-0ff6-4364-8275-8998d442d673",
+      "title": "Glow in the Dark",
+      "status": "Official",
+      "date": "2009-10-20",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "41efe651-b79a-4120-8599-87ca4b72f1fc",
+        "title": "Glow in the Dark",
+        "primary-type": "EP",
+        "secondary-types": [],
+        "first-release-date": "2009-10-20"
+      }
+    },
+    {
+      "id": "1ec0d3bf-954e-4e32-b2d4-6834071d04b9",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2007-12-19",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": false
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "20607fa0-f7da-4bde-838e-5530fba71950",
+      "title": "Late Orchestration",
+      "status": "Official",
+      "date": "2006",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": false
+      },
+      "release-group": {
+        "id": "0c95909c-4d34-37c0-910c-911106f7bb90",
+        "title": "Late Orchestration",
+        "primary-type": "Album",
+        "secondary-types": [
+          "Live"
+        ],
+        "first-release-date": "2006-05-01"
+      }
+    },
+    {
+      "id": "224cc584-3254-454a-98bd-01f594152d27",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "status": "Official",
+      "date": "2010",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+        "title": "My Beautiful Dark Twisted Fantasy",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2010-11-19"
+      }
+    },
+    {
+      "id": "2265cf9d-3d1f-4e10-ac5d-d21d217ed7b6",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "status": "Official",
+      "date": "2010",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+        "title": "My Beautiful Dark Twisted Fantasy",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2010-11-19"
+      }
+    },
+    {
+      "id": "2a23ffd1-871e-4918-ade0-852a7e34f0f9",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "status": "Official",
+      "date": "2010-11-22",
+      "disambiguation": "deluxe edition, explicit",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+        "title": "My Beautiful Dark Twisted Fantasy",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2010-11-19"
+      }
+    },
+    {
+      "id": "2fcfcaaa-6594-4291-b79f-2d354139e108",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "status": "Official",
+      "date": "2010-11-22",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+        "title": "My Beautiful Dark Twisted Fantasy",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2010-11-19"
+      }
+    },
+    {
+      "id": "3003d4ef-c623-469a-977a-d65ee311e578",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2005-08-30",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "351f2dad-d668-4e71-8cbd-9e7ae1069a03",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "status": "Official",
+      "date": "2010-11-22",
+      "disambiguation": "deluxe edition, clean",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+        "title": "My Beautiful Dark Twisted Fantasy",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2010-11-19"
+      }
+    },
+    {
+      "id": "428e7920-b3e6-45d2-a61d-aa75101dfe5e",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2005-08-30",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "49175ba0-330f-3a95-8156-72f4dcd4d656",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2006-09-27",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": false
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "4a85faf9-a063-43af-8728-2b528b670468",
+      "title": "The College Dropout",
+      "status": "Official",
+      "date": "2005-03-02",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "8a01217e-6947-3927-a39b-6691104694f1",
+        "title": "The College Dropout",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2004-02-09"
+      }
+    },
+    {
+      "id": "518a1625-91e3-401c-bb8a-5f7daf965bce",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2005",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": false
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "5725e292-c266-454b-8db2-759f2ea29b56",
+      "title": "The College Dropout",
+      "status": "Official",
+      "date": "2007-05-23",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "8a01217e-6947-3927-a39b-6691104694f1",
+        "title": "The College Dropout",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2004-02-09"
+      }
+    },
+    {
+      "id": "5c525a6a-0152-47b7-8bba-d67cf4b7b0cc",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "status": "Official",
+      "date": "2010-11-22",
+      "disambiguation": "explicit",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+        "title": "My Beautiful Dark Twisted Fantasy",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2010-11-19"
+      }
+    },
+    {
+      "id": "6ce920e7-a780-451c-b8ed-c908206ba38a",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "status": "Official",
+      "date": "2010-11-22",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+        "title": "My Beautiful Dark Twisted Fantasy",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2010-11-19"
+      }
+    },
+    {
+      "id": "6da96ad3-6c0d-4806-a4e2-56a8736e310e",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "status": "Official",
+      "date": "2010-11-22",
+      "disambiguation": "clean version",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+        "title": "My Beautiful Dark Twisted Fantasy",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2010-11-19"
+      }
+    },
+    {
+      "id": "755c8536-f9c4-4c13-beef-9ba4b087e2a3",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2006-03-21",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "789b10b1-944b-4b73-8a9e-b318119124b1",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2005",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "90bd7e27-d9c3-4b28-9058-0d55f74ab497",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "status": "Official",
+      "date": "2010-11",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+        "title": "My Beautiful Dark Twisted Fantasy",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2010-11-19"
+      }
+    },
+    {
+      "id": "936085b3-ded4-4ebd-a6d8-eb8e9a5fea06",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "status": "Official",
+      "date": "2010-11-22",
+      "disambiguation": "explicit",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+        "title": "My Beautiful Dark Twisted Fantasy",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2010-11-19"
+      }
+    },
+    {
+      "id": "9624eeef-9d52-4f40-ad52-54d1bea9094a",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "status": "Official",
+      "date": "2010-12-22",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": false
+      },
+      "release-group": {
+        "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+        "title": "My Beautiful Dark Twisted Fantasy",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2010-11-19"
+      }
+    },
+    {
+      "id": "99a96bf6-8166-3b7c-97ed-ea525f13ec65",
+      "title": "The College Dropout",
+      "status": "Official",
+      "date": "2004-02-10",
+      "disambiguation": "edited/clean version",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "8a01217e-6947-3927-a39b-6691104694f1",
+        "title": "The College Dropout",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2004-02-09"
+      }
+    },
+    {
+      "id": "9e0b2cbd-d0b7-4db8-8e30-4a2ab5baeedd",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2005-08-30",
+      "disambiguation": "clean version",
+      "cover-art-archive": {
+        "front": false
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "a6949d8e-c1eb-4eee-a670-680d28dd80e6",
+      "title": "The College Dropout",
+      "status": "Official",
+      "date": "2004-02-16",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "8a01217e-6947-3927-a39b-6691104694f1",
+        "title": "The College Dropout",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2004-02-09"
+      }
+    },
+    {
+      "id": "abf72578-cef8-4222-9eb1-9c8bddc2faa9",
+      "title": "Love Lockdown",
+      "status": "Official",
+      "date": "2008-11-21",
+      "disambiguation": "Essential 5 EP",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "c61cf2c6-f1fa-37c3-b4a5-5592a3221ede",
+        "title": "Love Lockdown",
+        "primary-type": "EP",
+        "secondary-types": [
+          "Compilation"
+        ],
+        "first-release-date": "2008-11-21"
+      }
+    },
+    {
+      "id": "b0f5a6ab-ebad-43d7-b880-c5a6d6a3e79d",
+      "title": "The College Dropout",
+      "status": "Official",
+      "date": "2005-09-21",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "8a01217e-6947-3927-a39b-6691104694f1",
+        "title": "The College Dropout",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2004-02-09"
+      }
+    },
+    {
+      "id": "b3880f46-7ff8-46b8-86dc-57f5ffa5aea4",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2005-08-30",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "c4a2e331-9b7d-429f-8117-7749e64f75e8",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2005-08-26",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "c504da7b-3220-41e9-ad69-a3dce78af863",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "status": "Official",
+      "date": "2010-11-22",
+      "disambiguation": "clean",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+        "title": "My Beautiful Dark Twisted Fantasy",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2010-11-19"
+      }
+    },
+    {
+      "id": "c6397943-f77e-44f5-89a8-cc1a57551546",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "status": "Official",
+      "date": "2010-11-22",
+      "disambiguation": "clean",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+        "title": "My Beautiful Dark Twisted Fantasy",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2010-11-19"
+      }
+    },
+    {
+      "id": "c961be0b-44fa-4296-8bce-e4f2d5ec0597",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2005",
+      "disambiguation": "deluxe limited edition with bonus DVD",
+      "cover-art-archive": {
+        "front": false
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "cd474271-bd7a-4d53-ba9e-e9d5bd7958cb",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "status": "Official",
+      "date": "2010-11-19",
+      "disambiguation": "deluxe edition with DVD",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+        "title": "My Beautiful Dark Twisted Fantasy",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2010-11-19"
+      }
+    },
+    {
+      "id": "cd7d8c81-d519-4149-8cd0-ade722ad19b9",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "status": "Official",
+      "date": "2010-11-22",
+      "disambiguation": "deluxe edition with DVD",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+        "title": "My Beautiful Dark Twisted Fantasy",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2010-11-19"
+      }
+    },
+    {
+      "id": "d468ffe2-254f-3ca4-899f-dc155bcfd483",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "status": "Official",
+      "date": "2010-11-22",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+        "title": "My Beautiful Dark Twisted Fantasy",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2010-11-19"
+      }
+    },
+    {
+      "id": "d6f9a7a4-d291-44a5-be15-66101e094190",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2005-08-29",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "da13b81f-7b09-3fb6-b5c9-8551f22c797e",
+      "title": "The College Dropout",
+      "status": "Official",
+      "date": "2004-02-10",
+      "disambiguation": "explicit",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "8a01217e-6947-3927-a39b-6691104694f1",
+        "title": "The College Dropout",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2004-02-09"
+      }
+    },
+    {
+      "id": "df27afd9-857f-4219-a7f0-9f257aa8fc03",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2005",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": false
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "df33ca0e-427c-34b8-8c34-923496342e0d",
+      "title": "Late Orchestration",
+      "status": "Official",
+      "date": "2006-05-01",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "0c95909c-4d34-37c0-910c-911106f7bb90",
+        "title": "Late Orchestration",
+        "primary-type": "Album",
+        "secondary-types": [
+          "Live"
+        ],
+        "first-release-date": "2006-05-01"
+      }
+    },
+    {
+      "id": "ee824b29-2793-40c2-8482-ff60fcded3da",
+      "title": "The College Dropout",
+      "status": "Official",
+      "date": "2005-05-04",
+      "disambiguation": "special edition",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "8a01217e-6947-3927-a39b-6691104694f1",
+        "title": "The College Dropout",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2004-02-09"
+      }
+    },
+    {
+      "id": "ef748325-cb18-46c6-b0fd-7276bd6f4337",
+      "title": "My Beautiful Dark Twisted Fantasy",
+      "status": "Official",
+      "date": "2010-11-22",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "5d6e21e1-deb5-428e-bb42-c2a567f3619b",
+        "title": "My Beautiful Dark Twisted Fantasy",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2010-11-19"
+      }
+    },
+    {
+      "id": "03f03619-385a-4ed9-9974-cdcdf6404cf5",
+      "title": "The Life of Pablo",
+      "status": "Official",
+      "date": "2016-06-15",
+      "disambiguation": "explicit, reworked tracks",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "8c18657a-6338-490d-a952-897663596b96",
+        "title": "The Life of Pablo",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2016-02-14"
+      }
+    },
+    {
+      "id": "08646594-2895-4fe3-b65c-8794ead58f61",
+      "title": "Late Orchestration",
+      "status": "Official",
+      "date": "2022-02-09",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": false
+      },
+      "release-group": {
+        "id": "0c95909c-4d34-37c0-910c-911106f7bb90",
+        "title": "Late Orchestration",
+        "primary-type": "Album",
+        "secondary-types": [
+          "Live"
+        ],
+        "first-release-date": "2006-05-01"
+      }
+    },
+    {
+      "id": "36cb1633-ad57-433f-8305-56fb28823c24",
+      "title": "DONDA 2",
+      "status": "Official",
+      "date": "2025-06-06",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "26584460-df1f-4a91-b036-8d0bf6f8ce95",
+        "title": "Donda 2",
+        "primary-type": "Album",
+        "secondary-types": [
+          "Demo"
+        ],
+        "first-release-date": "2022-02-23"
+      }
+    },
+    {
+      "id": "3e5babfd-e737-461c-9839-60fa4c2c208a",
+      "title": "DONDA 2",
+      "status": "Official",
+      "date": "2025-05-01",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "26584460-df1f-4a91-b036-8d0bf6f8ce95",
+        "title": "Donda 2",
+        "primary-type": "Album",
+        "secondary-types": [
+          "Demo"
+        ],
+        "first-release-date": "2022-02-23"
+      }
+    },
+    {
+      "id": "4476cc6a-41ac-4df0-99ad-140218958b62",
+      "title": "The College Dropout",
+      "status": "Official",
+      "date": "2018-07-16",
+      "disambiguation": "explicit",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "8a01217e-6947-3927-a39b-6691104694f1",
+        "title": "The College Dropout",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2004-02-09"
+      }
+    },
+    {
+      "id": "4906f8de-74f2-4f42-87f4-8f83ec2d9a04",
+      "title": "The College Dropout",
+      "status": "Official",
+      "date": "2018-07-16",
+      "disambiguation": "clean",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "8a01217e-6947-3927-a39b-6691104694f1",
+        "title": "The College Dropout",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2004-02-09"
+      }
+    },
+    {
+      "id": "5129112b-777d-4411-88b3-92de26afa301",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2012-09-22",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": false
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "55a33f0e-eebb-4426-9b87-30bb90d55d11",
+      "title": "The College Dropout",
+      "status": "Official",
+      "date": "",
+      "disambiguation": "white cover, pink lettering",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "8a01217e-6947-3927-a39b-6691104694f1",
+        "title": "The College Dropout",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2004-02-09"
+      }
+    },
+    {
+      "id": "7cf99d09-51e9-4ad3-9c57-b8425f34f3ef",
+      "title": "Late Registration",
+      "status": "Official",
+      "date": "2018-10-30",
+      "disambiguation": "explicit",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "c563d738-3841-31ce-b29d-ec6b40fd1e7b",
+        "title": "Late Registration",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2005-03"
+      }
+    },
+    {
+      "id": "7f8d86da-ea70-4bb2-97d1-dd41e62a1c88",
+      "title": "DONDA 2",
+      "status": "Official",
+      "date": "2025-06-06",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "26584460-df1f-4a91-b036-8d0bf6f8ce95",
+        "title": "Donda 2",
+        "primary-type": "Album",
+        "secondary-types": [
+          "Demo"
+        ],
+        "first-release-date": "2022-02-23"
+      }
+    },
+    {
+      "id": "a3c1ba5c-b48c-4437-9127-3f0a531fb25d",
+      "title": "DONDA 2",
+      "status": "Official",
+      "date": "2025-05-10",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "26584460-df1f-4a91-b036-8d0bf6f8ce95",
+        "title": "Donda 2",
+        "primary-type": "Album",
+        "secondary-types": [
+          "Demo"
+        ],
+        "first-release-date": "2022-02-23"
+      }
+    },
+    {
+      "id": "a59023be-7de1-4e9e-bd05-cba21c83ac82",
+      "title": "The College Dropout +1",
+      "status": "Official",
+      "date": "2012-09-19",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": false
+      },
+      "release-group": {
+        "id": "8a01217e-6947-3927-a39b-6691104694f1",
+        "title": "The College Dropout",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2004-02-09"
+      }
+    },
+    {
+      "id": "b6a2d201-7f59-4a20-9c01-daf6d4d40e42",
+      "title": "DONDA 2",
+      "status": "Official",
+      "date": "2025-04-29",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "26584460-df1f-4a91-b036-8d0bf6f8ce95",
+        "title": "Donda 2",
+        "primary-type": "Album",
+        "secondary-types": [
+          "Demo"
+        ],
+        "first-release-date": "2022-02-23"
+      }
+    },
+    {
+      "id": "c0dcbf62-897b-4204-b4af-7d5480919be5",
+      "title": "DONDA 2",
+      "status": "Official",
+      "date": "2025-06-06",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "26584460-df1f-4a91-b036-8d0bf6f8ce95",
+        "title": "Donda 2",
+        "primary-type": "Album",
+        "secondary-types": [
+          "Demo"
+        ],
+        "first-release-date": "2022-02-23"
+      }
+    },
+    {
+      "id": "ca35d880-1fa8-415f-9733-6f80d940c522",
+      "title": "Donda 2",
+      "status": "Official",
+      "date": "2022-11-21",
+      "disambiguation": "",
+      "cover-art-archive": {
+        "front": false
+      },
+      "release-group": {
+        "id": "26584460-df1f-4a91-b036-8d0bf6f8ce95",
+        "title": "Donda 2",
+        "primary-type": "Album",
+        "secondary-types": [
+          "Demo"
+        ],
+        "first-release-date": "2022-02-23"
+      }
+    },
+    {
+      "id": "d44749e8-a380-4f68-9e30-63488a5ded7e",
+      "title": "The College Dropout",
+      "status": "Official",
+      "date": "",
+      "disambiguation": "reissue",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "8a01217e-6947-3927-a39b-6691104694f1",
+        "title": "The College Dropout",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2004-02-09"
+      }
+    },
+    {
+      "id": "f84ac70c-0956-4752-950c-0a1cdc4ee5a0",
+      "title": "The Life of Pablo",
+      "status": "Official",
+      "date": "2016-04-05",
+      "disambiguation": "clean",
+      "cover-art-archive": {
+        "front": true
+      },
+      "release-group": {
+        "id": "8c18657a-6338-490d-a952-897663596b96",
+        "title": "The Life of Pablo",
+        "primary-type": "Album",
+        "secondary-types": [],
+        "first-release-date": "2016-02-14"
+      }
+    }
+  ]
+}
