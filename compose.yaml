@@ -8,9 +8,9 @@ services:
     image: postgres:18-alpine
     restart: unless-stopped
     environment:
-      POSTGRES_USER: ${POSTGRES_USER:?à définir dans .env}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?à définir dans .env}
-      POSTGRES_DB: ${POSTGRES_DB:?à définir dans .env}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORDv}
+      POSTGRES_DB: ${POSTGRES_DB}
     ports:
       - "127.0.0.1:${POSTGRES_PORT:-5433}:5432"
     volumes:
@@ -25,10 +25,10 @@ services:
     image: arangodb:3.12
     restart: unless-stopped
     environment:
-      ARANGO_ROOT_PASSWORD: ${ARANGO_ROOT_PASSWORD:?à définir dans .env}
+      ARANGO_ROOT_PASSWORD: ${ARANGO_ROOT_PASSWORD}
     ports:
       # Interface web : http://localhost:8529
-      - "127.0.0.1:${ARANGO_PORT:-8529}:8529"
+      - "127.0.0.1:${ARANGO_PORT}:8529"
     volumes:
       - arangodb-data:/var/lib/arangodb3
       - arangodb-apps:/var/lib/arangodb3-apps
