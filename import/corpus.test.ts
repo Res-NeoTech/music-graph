@@ -2,7 +2,8 @@ import { describe, expect, it } from "vitest"
 
 import { isMbid } from "@/lib/mbid"
 
-import { CORPUS, selectArtistsToImport } from "./corpus"
+import { selectArtistsToImport } from "./corpus"
+import { CORPUS } from "./corpus.generated" // this file is in .gitignore, so generate it using `npm run populate`
 import type { ImportStatus } from "./transform/types"
 
 // Tests de selectArtistsToImport(), à faire passer : npx vitest run import/corpus
