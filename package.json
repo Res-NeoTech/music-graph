@@ -13,6 +13,7 @@
     "generate": "drizzle-kit generate",
     "migrate": "drizzle-kit migrate",
     "studio": "drizzle-kit studio",
+    "populate": "tsx import/populateCorpus.ts",
     "import": "tsx --env-file=.env import/index.ts",
     "test": "vitest"
   },

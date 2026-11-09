@@ -6,26 +6,6 @@ export interface CorpusArtist {
   name: string
 }
 
-/**
- * TODO (Maksym) — les ~100 artistes de départ, d'un même genre musical
- * (cahier des charges, « Périmètre »). Choisir des artistes dont les crédits
- * sont bien renseignés sur MusicBrainz.
- *
- * Le MBID se lit dans l'URL de la page MusicBrainz de l'artiste :
- *   https://musicbrainz.org/artist/164f0d73-1234-4e2c-8743-d77bf2191051 → Ye
- *
- * En attendant, un artiste s'importe seul avec :
- *   npm run import -- --artist 164f0d73-1234-4e2c-8743-d77bf2191051
- */
-export const CORPUS: readonly CorpusArtist[] = [
-  // { mbid: "164f0d73-1234-4e2c-8743-d77bf2191051", name: "Ye" },
-]
-
-/**
- * - "all" : tout le corpus (met à jour les artistes déjà importés) ;
- * - "failed" : seulement ce qui n'a pas réussi, pour reprendre après une
- *   erreur ou une interruption.
- */
 export type ImportMode = "all" | "failed"
 
 /**
