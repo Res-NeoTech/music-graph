@@ -13,7 +13,7 @@ const SEEDS = [
   "Gucci Mane", "T.I.", "Waka Flocka Flame", "Jeezy",
   "2 Chainz", "Lil Durk", "Polo G", "Roddy Ricch",
   "Moneybagg Yo", "Key Glock", "Pooh Shiesty",
-  "Kodak Black", "NBA YoungBoy", "Nardo Wick",
+  "Kodak Black", "YoungBoy Never Broke Again", "Nardo Wick",
   "Latto", "Coi Leray", "Sexyy Red", "Flo Milli",
   "City Girls", "Megan Thee Stallion", "Young Nudy",
 
