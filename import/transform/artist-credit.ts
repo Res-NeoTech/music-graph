@@ -62,7 +62,20 @@ export interface CreditRole {
 export function toCreditRoles(
   credit: readonly ArtistCreditRow[]
 ): CreditRole[] {
-  throw new Error(
-    `TODO : toCreditRoles() n'est pas encore implémentée (${credit.length} artistes reçus)`
-  )
+  const sortedArtists: ArtistCreditRow[] = credit.toSorted((a, b) => a.position - b.position);
+
+  const featuringRegex = /\b(feat|ft|featuring)\b/i;
+  const roles: CreditRole[] = [];
+
+  let isFeaturing = false;
+  for (const artist of sortedArtists) {
+    roles.push({
+      artistMbid: artist.artistMbid,
+      role: isFeaturing ? "featuring" : "main"
+    })
+
+    isFeaturing = isFeaturing || featuringRegex.test(artist.joinPhrase);
+  }
+  
+  return roles;
 }

@@ -23,27 +23,8 @@ export function membershipArtists(artist: MbArtist): ArtistRow[] {
 }
 
 /**
- * TODO (Maksym) — à implémenter. Tests : import/transform/memberships.test.ts
- *
  * Relations « member of band » d'un artiste (lookup avec inc=artist-rels)
  * → lignes de la table `memberships`.
- *
- * 3. MusicBrainz crée une relation par instrument et par période : un membre
- *    qui chante et joue de la guitare en a 2, un membre parti puis revenu
- *    en a une par période.
- *    (groupe, membre) étant la clé primaire, les fusionner en UNE ligne :
- *    - startDate : la plus ancienne date de début (`begin`), null si aucune ;
- *    - finishDate : la plus récente date de fin (`end`). null si aucune, ou si
- *      une des relations n'est pas terminée (`ended` vaut false) : le membre
- *      fait encore partie du groupe ;
- *    - detail : les `attributes` (instruments, voix), sans doublon, dans
- *      l'ordre de première apparition, séparés par ", ". L'attribut "original"
- *      (membre fondateur) n'est pas un instrument : l'ignorer. null si vide.
- * 4. Passer les dates par toPartialDate() (./fields), comme partout ailleurs.
- *    Les dates partielles se comparent comme des chaînes : "1987" < "1988-05".
- *
- * Chaque ligne a les 5 colonnes, même à null (le type MembershipRow l'impose).
- * L'ordre du tableau renvoyé n'a pas d'importance.
  */
 export function toMemberships(artist: MbArtist): MembershipRow[] {
   const filteredRelations = artist.relations?.filter((relation) => relation.type === MEMBER_OF_BAND && relation.artist) ?? [];
