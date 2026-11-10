@@ -5,7 +5,8 @@ import { db as postgres } from "@/lib/db/postgres/client"
 import { isMbid } from "@/lib/mbid"
 import pkg from "@/package.json"
 
-import { CORPUS, type ImportMode, selectArtistsToImport } from "./corpus"
+import { type ImportMode, selectArtistsToImport } from "./corpus"
+import { CORPUS } from "./corpus.generated" // this file is in .gitignore, so generate it using `npm run populate`
 import { ensureGraphSchema, saveGraph } from "./load/arango"
 import {
   finishArtistImport,
