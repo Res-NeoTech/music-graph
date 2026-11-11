@@ -56,3 +56,46 @@
 - Mise à jour de Next.js et correction des avertissements ESLint.
 - Amélioration de la documentation.
 - **Pourquoi :** la recherche est l'action principale, elle est donc au centre de la page. La recherche passe par l'URL (`/search?q=...`), on peut donc la partager.
+
+---
+
+## 04.11.2026 — Connexions aux bases et script d'import
+
+**Durée :** 4 périodes
+
+- Connexion à ArangoDB et lecture centralisée des variables d'environnement.
+- Installation de Vitest et migration qui remplit la table `roles`.
+- Première version du script d'import (client MusicBrainz, transformation, chargement), encore incomplète.
+- **Pourquoi un seul client MusicBrainz :** l'API accepte une requête par seconde. Tous les appels passent donc par le même limiteur de débit.
+
+---
+
+## 09.11.2026 — Corpus d'artistes
+
+**Durée :** 4 périodes
+
+- Script qui génère le corpus : il cherche le MBID de 100 artistes à partir de leur nom.
+- Fonction `selectArtistsToImport()` : importe tous les artistes, ou seulement ceux qui ont échoué.
+- **Pourquoi :** l'import complet est long. Après une interruption, on ne reprend que les artistes sans statut `ok`.
+
+---
+
+## 10.11.2026 — Transformation des données
+
+**Durée :** 4 périodes
+
+- `pickReleases()` : garde une seule édition par album.
+- `toMemberships()` : relations entre un groupe et ses membres.
+- `toCreditRoles()` : distingue l'artiste principal des invités (« feat. »).
+- **Pourquoi une seule édition :** un album a souvent des dizaines d'éditions. Les importer toutes créerait des doublons de morceaux.
+
+---
+
+## 11.11.2026 — Pages artiste et pagination
+
+**Durée :** 4 périodes
+
+- Liste des artistes (`/artists`) et page de détail (`/artists/[mbid]`).
+- Pagination de la liste : 24 artistes par page, numéro de page dans l'URL.
+- Début de la page de recherche, à terminer.
+- **Pourquoi la pagination :** la table contient plus de 6000 artistes, tout afficher d'un coup était lent. La base ne renvoie que la page demandée.
