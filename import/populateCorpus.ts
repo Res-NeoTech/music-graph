@@ -1,5 +1,6 @@
 
 import { writeFile } from "node:fs/promises";
+import pkg from "@/package.json"
 
 const SEEDS = [
   // Core artists
@@ -65,7 +66,7 @@ async function resolveArtist(name: string) {
 
   const response = await fetch(`${API}?${params}`, {
     headers: {
-      "User-Agent": "Music-Graph Agent/1.0",
+      "User-Agent": `Music-Graph Agent/${pkg.version}`,
     },
   });
 

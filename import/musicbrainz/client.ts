@@ -70,7 +70,7 @@ export function buildUserAgent(version: string, contact: string | undefined) {
         "(e-mail ou URL) dans le User-Agent. Voir .env.example."
     )
   }
-  return `MusicGraph/${version} ( ${contact.trim()} )`
+  return `MusicGraph Agent/${version} ( ${contact.trim()} )`
 }
 
 /** Résultat d'un seul appel HTTP, le corps déjà lu. */
