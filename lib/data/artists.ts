@@ -1,5 +1,6 @@
+import "server-only";
 import { db } from "../db/postgres/client";
-import { eq } from 'drizzle-orm'
+import { eq, count } from 'drizzle-orm'
 import { artists } from "../db/postgres/schema";
 import { Artist, ArtistType } from "../types";
 
@@ -28,27 +29,20 @@ export async function findByMbid(mbid: string): Promise<Artist | null> {
     }
 }
 
-export async function findAll(): Promise<Artist[] | null> {
-    const result = await db
+export async function findPages(page: number, pageSize: number): Promise<{ artists: Artist[]; total: number }> {
+    const sliceQuery = db
         .select()
         .from(artists)
+        .orderBy(artists.sortingName, artists.mbid)
+        .limit(pageSize)
+        .offset((page - 1) * pageSize)
 
-    const documents = result
+    const countQuery = db.select({ value: count() }).from(artists);
 
-    if (!documents) {
-        return null
-    }
+    const [rows, totalRows] = await Promise.all([sliceQuery, countQuery])
 
-    return documents.map((document) => {
-        return {
-            mbid: document.mbid,
-            name: document.name,
-            sortingName: document.sortingName,
-            type: document.type as unknown as ArtistType,
-            country: document.country,
-            startDate: document.startDate,
-            finishDate: document.finishDate,
-            disambiguation: document.disambiguation
-        }
-    });
+    return {
+        artists: rows,
+        total: totalRows[0].value
+    };
 }

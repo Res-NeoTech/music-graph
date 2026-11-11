@@ -1,7 +1,7 @@
 import { UsersIcon } from "lucide-react"
 import type { Metadata } from "next"
+import { notFound } from "next/navigation"
 
-import { findAll } from "@/lib/data/artists"
 import { ArtistGrid } from "@/components/artists/artist-grid"
 import {
   Empty,
@@ -10,25 +10,35 @@ import {
   EmptyMedia,
   EmptyTitle,
 } from "@/components/ui/empty"
-import type { Artist } from "@/lib/types"
+import { PaginationNav } from "@/components/pagination-nav"
+import { findPages } from "@/lib/data/artists"
+import { pageCount, parsePage } from "@/lib/pagination"
 
 export const metadata: Metadata = {
   title: "Artists",
   description: "Browse the artists of the Music Graph catalogue.",
 }
 
-async function getArtists(): Promise<Artist[]> {
-  const artists = await findAll();
-
-  if (artists === null) {
-    return [];
-  }
-
-  return artists;
+type ArtistPageProps = {
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
-export default async function ArtistsPage() {
-  const artists = await getArtists()
+const PAGE_SIZE = 24
+
+// La page 1 n'a qu'une adresse, /artists (et pas aussi /artists?page=1)
+function artistsPageHref(page: number): string {
+  return page === 1 ? "/artists" : `/artists?page=${page}`
+}
+
+export default async function ArtistsPage({ searchParams }: ArtistPageProps) {
+  const page = parsePage((await searchParams).page)
+
+  const { artists, total: totalArtists } = await findPages(page, PAGE_SIZE)
+
+  // Page au-delà de la dernière (`?page=9999`) : elle n'existe pas → 404.
+  // La page 1 reste valide même sans artiste : elle affiche l'état vide.
+  const lastPage = Math.max(pageCount(totalArtists, PAGE_SIZE), 1)
+  if (page > lastPage) notFound()
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-10 sm:px-6 sm:py-14">
@@ -37,9 +47,9 @@ export default async function ArtistsPage() {
           Artists
         </h1>
         <p className="mt-2 text-muted-foreground">
-          {artists.length === 1
+          {totalArtists === 1
             ? "1 artist in the catalogue"
-            : `${artists.length.toLocaleString("en-US")} artists in the catalogue`}
+            : `${totalArtists.toLocaleString("en-US")} artists in the catalogue`}
         </p>
       </header>
 
@@ -57,7 +67,15 @@ export default async function ArtistsPage() {
           </EmptyHeader>
         </Empty>
       ) : (
-        <ArtistGrid artists={artists} />
+        <>
+          <ArtistGrid artists={artists} />
+          <PaginationNav
+            page={page}
+            lastPage={lastPage}
+            hrefForPage={artistsPageHref}
+            className="mt-10"
+          />
+        </>
       )}
     </div>
   )
