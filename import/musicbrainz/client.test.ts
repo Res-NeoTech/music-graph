@@ -43,7 +43,7 @@ function setup(
 describe("buildUserAgent", () => {
   it("suit le format exigé par MusicBrainz", () => {
     expect(buildUserAgent("0.0.1", " https://example.org ")).toBe(
-      "MusicGraph/0.0.1 ( https://example.org )"
+      "MusicGraph Agent/0.0.1 ( https://example.org )"
     )
   })
 

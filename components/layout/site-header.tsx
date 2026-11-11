@@ -1,4 +1,4 @@
-import { RouteIcon, SearchIcon } from "lucide-react"
+import { RouteIcon, SearchIcon, UsersIcon } from "lucide-react"
 import Link from "next/link"
 
 import { ThemeToggle } from "@/components/layout/theme-toggle"
@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 
 const navItems = [
   { href: "/search", label: "Search", icon: SearchIcon },
+  { href: "/artists", label: "Artists", icon: UsersIcon },
   { href: "/path", label: "Path", icon: RouteIcon },
 ]
 
@@ -33,7 +34,9 @@ export function SiteHeader() {
                   nativeButton={false}
                 >
                   <Icon data-icon="inline-start" />
-                  {label}
+                  {/* Sous 360 px, trois libellés ne tiennent plus : icône
+                      seule, le libellé reste lu par les lecteurs d'écran */}
+                  <span className="max-[359px]:sr-only">{label}</span>
                 </Button>
               </li>
             ))}
