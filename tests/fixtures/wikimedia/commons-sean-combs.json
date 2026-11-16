@@ -1,0 +1,33 @@
+{
+  "batchcomplete": true,
+  "query": {
+    "pages": [
+      {
+        "pageid": 161566037,
+        "ns": 6,
+        "title": "File:Sean Combs Cannes 2012 (cropped).jpg",
+        "imagerepository": "local",
+        "imageinfo": [
+          {
+            "extmetadata": {
+              "Artist": {
+                "value": "<a href=\"//commons.wikimedia.org/wiki/User:Nikeush\" class=\"mw-redirect\" title=\"User:Nikeush\">Nikeush</a>",
+                "source": "commons-desc-page"
+              },
+              "LicenseShortName": {
+                "value": "CC BY-SA 4.0",
+                "source": "commons-desc-page",
+                "hidden": ""
+              },
+              "AttributionRequired": {
+                "value": "true",
+                "source": "commons-desc-page",
+                "hidden": ""
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

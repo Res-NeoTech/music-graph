@@ -70,6 +70,12 @@ export const artists = pgTable(
     startDate: partialDate("start_date"),
     finishDate: partialDate("finish_date"),
     disambiguation: text("disambiguation"),
+    // Photo (Wikidata P18 → Wikimedia Commons), corpus seulement ; NULL = pas
+    // de photo. On stocke le nom du fichier : les URL s'en déduisent.
+    imageFile: text("image_file"),
+    // crédit obligatoire (licences CC BY / CC BY-SA)
+    imageAuthor: text("image_author"),
+    imageLicence: text("image_licence"),
     // NULL = artiste découvert via une relation, hors corpus
     importStatus: importStatus("import_status"),
     importError: text("import_error"),

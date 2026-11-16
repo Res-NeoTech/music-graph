@@ -1,0 +1,115 @@
+{
+  "type": "diff",
+  "version": "9",
+  "dialect": "postgres",
+  "id": "ade41f6d-d7f3-46bc-81bb-f03eff2a5dc5",
+  "prevIds": [
+    "32845d7a-f5bc-4bee-9bcf-b9e624d8abba"
+  ],
+  "footprints": [
+    {
+      "statementType": "add_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "artists",
+        "image_file"
+      ],
+      "writes": [
+        "s|col|public.artists.image_file",
+        "n|col|public.artists.image_file",
+        "e|col|public.artists.image_file"
+      ],
+      "reads": [
+        "n|tbl|public.artists",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "add_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "artists",
+        "image_author"
+      ],
+      "writes": [
+        "s|col|public.artists.image_author",
+        "n|col|public.artists.image_author",
+        "e|col|public.artists.image_author"
+      ],
+      "reads": [
+        "n|tbl|public.artists",
+        "n|sch|public"
+      ]
+    },
+    {
+      "statementType": "add_column",
+      "statementTarget": [
+        "column",
+        "public",
+        "artists",
+        "image_licence"
+      ],
+      "writes": [
+        "s|col|public.artists.image_licence",
+        "n|col|public.artists.image_licence",
+        "e|col|public.artists.image_licence"
+      ],
+      "reads": [
+        "n|tbl|public.artists",
+        "n|sch|public"
+      ]
+    }
+  ],
+  "deltas": [
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "artists",
+        "name": "image_file",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "artists",
+        "name": "image_author",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    },
+    {
+      "op": "create",
+      "row": {
+        "schema": "public",
+        "table": "artists",
+        "name": "image_licence",
+        "type": "text",
+        "typeSchema": null,
+        "notNull": false,
+        "dimensions": 0,
+        "default": null,
+        "generated": null,
+        "identity": null,
+        "entityType": "columns"
+      }
+    }
+  ]
+}

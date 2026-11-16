@@ -26,6 +26,7 @@ Cahier des charges complet : `docs/cahier-des-charges.md`. Le lire avant toute n
 - **Le MBID (identifiant MusicBrainz) est la clé commune** aux deux bases. Ne jamais identifier un artiste par son nom (homonymes).
 - **L'import est idempotent** : upsert sur MBID, relançable sans doublons, reprise après interruption. Chaque artiste importé a un statut `ok` / `failed` pour pouvoir rejouer uniquement les échecs.
 - Les pochettes viennent de la Cover Art Archive, via le MBID de la release.
+- Les photos d'artistes viennent de Wikimedia Commons : lien Wikidata de MusicBrainz (`url-rels`) → propriété P18 → fichier Commons. Résolues **par le script d'import** (`import/wikimedia/client.ts`), stockées dans `artists.image_*` (nom du fichier + auteur + licence) ; le crédit est affiché sur la page artiste. Facultatif : une erreur Wikimedia ne fait pas échouer l'artiste. Sans photo : icône du type.
 
 ## MusicBrainz
 

@@ -15,7 +15,12 @@ import {
 } from "@/lib/db/postgres/schema"
 
 import type { ReleaseData } from "../transform/release"
-import type { ArtistRow, ImportStatus, MembershipRow } from "../transform/types"
+import type {
+  ArtistImageRow,
+  ArtistRow,
+  ImportStatus,
+  MembershipRow,
+} from "../transform/types"
 
 // Écritures du script d'import dans PostgreSQL.
 // Idempotence (B1) : chaque ligne est identifiée par son MBID, et l'insertion
@@ -97,6 +102,18 @@ export async function finishArtistImport(
       importDate: new Date(),
     })
     .where(eq(artists.mbid, mbid))
+}
+
+/**
+ * Photo d'un artiste du corpus (ou son absence : colonnes à null). Appelé
+ * après startArtistImport, la ligne existe donc déjà.
+ */
+export async function saveArtistImage(
+  db: PostgresDb,
+  mbid: string,
+  image: ArtistImageRow
+) {
+  await db.update(artists).set(image).where(eq(artists.mbid, mbid))
 }
 
 /** Membres d'un groupe, ou groupes d'une personne. */

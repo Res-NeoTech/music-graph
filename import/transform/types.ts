@@ -16,10 +16,23 @@ import type * as schema from "@/lib/db/postgres/schema"
 
 type Row<T extends { $inferInsert: object }> = Required<T["$inferInsert"]>
 
-/** Les colonnes import_* sont gérées par load/postgres.ts, pas par la transformation. */
+/** Colonnes de la photo, remplies par une autre source (Wikimedia) : voir ArtistImageRow. */
+type ArtistImageColumns = "imageFile" | "imageAuthor" | "imageLicence"
+
+/**
+ * Les colonnes import_* sont gérées par load/postgres.ts, pas par la
+ * transformation. La photo est écrite à part (saveArtistImage) : un artiste
+ * lu dans un crédit n'a pas de photo, et ne doit pas effacer celle d'un
+ * artiste du corpus.
+ */
 export type ArtistRow = Omit<
   Row<typeof schema.artists>,
-  "importStatus" | "importError" | "importDate"
+  "importStatus" | "importError" | "importDate" | ArtistImageColumns
+>
+/** Photo d'un artiste ; toutes les colonnes à null = pas de photo. */
+export type ArtistImageRow = Pick<
+  Row<typeof schema.artists>,
+  ArtistImageColumns
 >
 export type ReleaseRow = Row<typeof schema.releases>
 export type RecordingRow = Row<typeof schema.recordings>

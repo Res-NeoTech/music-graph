@@ -109,9 +109,15 @@ export class MusicBrainzClient {
   // `async` : une erreur (MBID invalide) devient une promesse rejetée,
   // comme les erreurs réseau, au lieu d'une exception synchrone.
 
-  /** Artiste et ses relations vers d'autres artistes (membres, groupes). */
+  /**
+   * Artiste, ses relations vers d'autres artistes (membres, groupes) et ses
+   * liens externes (url-rels : Wikidata, pour la photo). Même requête : les
+   * liens ne coûtent aucun appel supplémentaire.
+   */
   async getArtist(mbid: string): Promise<MbArtist> {
-    return this.get(`artist/${checkMbid(mbid)}`, { inc: "artist-rels" })
+    return this.get(`artist/${checkMbid(mbid)}`, {
+      inc: "artist-rels url-rels",
+    })
   }
 
   /** Release avec tracklist, crédits d'artiste et relations des morceaux. */

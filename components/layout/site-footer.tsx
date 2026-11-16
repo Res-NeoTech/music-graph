@@ -3,6 +3,7 @@ import { Separator } from "@/components/ui/separator"
 const sources = [
   { href: "https://musicbrainz.org", label: "MusicBrainz" },
   { href: "https://coverartarchive.org", label: "Cover Art Archive" },
+  { href: "https://commons.wikimedia.org", label: "Wikimedia Commons" },
 ]
 
 export function SiteFooter() {

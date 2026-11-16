@@ -4,6 +4,23 @@ import { eq, count } from 'drizzle-orm'
 import { artists } from "../db/postgres/schema";
 import { Artist, ArtistType } from "../types";
 
+/** Ligne de la table → type métier : la photo est regroupée dans un objet, ou null. */
+function toArtist(row: typeof artists.$inferSelect): Artist {
+    return {
+        mbid: row.mbid,
+        name: row.name,
+        sortingName: row.sortingName,
+        type: row.type as unknown as ArtistType,
+        country: row.country,
+        startDate: row.startDate,
+        finishDate: row.finishDate,
+        disambiguation: row.disambiguation,
+        image: row.imageFile
+            ? { file: row.imageFile, author: row.imageAuthor, licence: row.imageLicence }
+            : null
+    }
+}
+
 export async function findByMbid(mbid: string): Promise<Artist | null> {
     const result = await db
         .select()
@@ -17,16 +34,7 @@ export async function findByMbid(mbid: string): Promise<Artist | null> {
         return null
     }
 
-    return {
-        mbid: document.mbid,
-        name: document.name,
-        sortingName: document.sortingName,
-        type: document.type as unknown as ArtistType,
-        country: document.country,
-        startDate: document.startDate,
-        finishDate: document.finishDate,
-        disambiguation: document.disambiguation
-    }
+    return toArtist(document)
 }
 
 export async function findPages(page: number, pageSize: number): Promise<{ artists: Artist[]; total: number }> {
@@ -42,7 +50,7 @@ export async function findPages(page: number, pageSize: number): Promise<{ artis
     const [rows, totalRows] = await Promise.all([sliceQuery, countQuery])
 
     return {
-        artists: rows,
+        artists: rows.map(toArtist),
         total: totalRows[0].value
     };
 }

@@ -16,7 +16,7 @@ export interface MbArtistRef {
   country?: string | null
 }
 
-/** GET /artist/{mbid}?inc=artist-rels */
+/** GET /artist/{mbid}?inc=artist-rels+url-rels */
 export interface MbArtist extends MbArtistRef {
   "life-span"?: {
     begin?: string | null
@@ -56,6 +56,8 @@ export interface MbRelation {
   artist?: MbArtistRef
   /** présent si target-type = "work" */
   work?: MbWork
+  /** présent si target-type = "url" (inc=url-rels) : lien vers Wikidata, Discogs… */
+  url?: { id: string; resource: string }
 }
 
 /** Œuvre (la composition, indépendante de ses enregistrements). */

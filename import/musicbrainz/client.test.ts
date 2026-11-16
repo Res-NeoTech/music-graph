@@ -67,7 +67,7 @@ describe("MusicBrainzClient", () => {
     expect(url.origin + url.pathname).toBe(
       `https://musicbrainz.org/ws/2/artist/${YE}`
     )
-    expect(url.searchParams.get("inc")).toBe("artist-rels")
+    expect(url.searchParams.get("inc")).toBe("artist-rels url-rels")
     expect(url.searchParams.get("fmt")).toBe("json")
     expect(headers.get("User-Agent")).toBe(UA)
     expect(headers.get("Accept")).toBe("application/json")

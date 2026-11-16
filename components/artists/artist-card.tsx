@@ -1,7 +1,7 @@
 import Link from "next/link"
 
+import { ArtistAvatar } from "@/components/artists/artist-avatar"
 import { ArtistMeta } from "@/components/artists/artist-meta"
-import { ArtistAvatar } from "@/components/artists/artist-type"
 import {
   Card,
   CardContent,
@@ -27,7 +27,7 @@ export function ArtistCard({ artist }: { artist: Artist }) {
       >
         <CardContent className="flex h-full flex-col gap-3">
           <div className="flex items-center gap-3">
-            <ArtistAvatar type={artist.type} />
+            <ArtistAvatar type={artist.type} image={artist.image} />
             <div className="min-w-0">
               <CardTitle>
                 <h2 className="line-clamp-2">{artist.name}</h2>

@@ -190,6 +190,19 @@
         "country": "US",
         "disambiguation": ""
       }
+    },
+    {
+      "type": "wikidata",
+      "target-type": "url",
+      "direction": "forward",
+      "attributes": [],
+      "begin": null,
+      "end": null,
+      "ended": false,
+      "url": {
+        "id": "2fc28386-7eff-4fc0-9b36-d0c1eb4fdc4b",
+        "resource": "https://www.wikidata.org/wiki/Q15935"
+      }
     }
   ]
 }

@@ -12,16 +12,26 @@ import {
   finishArtistImport,
   loadImportStatuses,
   loadRoleCodes,
+  saveArtistImage,
   saveMemberships,
   saveRelease,
   startArtistImport,
 } from "./load/postgres"
 import { buildUserAgent, MusicBrainzClient } from "./musicbrainz/client"
+import type { MbArtist } from "./musicbrainz/types"
 import { toArtistRow } from "./transform/artist"
 import { artistToGraph, releaseToGraph } from "./transform/graph"
+import {
+  NO_ARTIST_IMAGE,
+  pickImageFile,
+  toArtistImage,
+  wikidataId,
+} from "./transform/image"
 import { membershipArtists, toMemberships } from "./transform/memberships"
 import { transformRelease } from "./transform/release"
 import { IMPORTED_RELEASE_TYPES, pickReleases } from "./transform/releases"
+import type { ArtistImageRow } from "./transform/types"
+import { WikimediaClient } from "./wikimedia/client"
 
 const HELP = `Import du corpus MusicBrainz dans PostgreSQL et ArangoDB.
 
@@ -35,6 +45,7 @@ Ctrl+C est sans risque : relancer ensuite avec --failed.`
 
 interface ImportContext {
   mb: MusicBrainzClient
+  wiki: WikimediaClient
   roles: ReadonlySet<string>
 }
 
@@ -78,10 +89,11 @@ async function main() {
   }
   await ensureGraphSchema(arango)
 
+  // Wikimedia demande le même genre de User-Agent que MusicBrainz
+  const userAgent = buildUserAgent(pkg.version, process.env.MUSICBRAINZ_CONTACT)
   const context: ImportContext = {
-    mb: new MusicBrainzClient({
-      userAgent: buildUserAgent(pkg.version, process.env.MUSICBRAINZ_CONTACT),
-    }),
+    mb: new MusicBrainzClient({ userAgent }),
+    wiki: new WikimediaClient({ userAgent }),
     roles,
   }
 
@@ -109,13 +121,13 @@ async function main() {
 
 /**
  * Import complet d'un artiste du corpus :
- * 1. l'artiste et ses membres / groupes ;
+ * 1. l'artiste, sa photo et ses membres / groupes ;
  * 2. une édition de chacun de ses albums et EP, avec morceaux et crédits.
  * PostgreSQL et ArangoDB sont écrits au fur et à mesure ; tout est
  * idempotent, donc un artiste interrompu peut être réimporté en entier.
  */
 async function importArtist(
-  { mb, roles }: ImportContext,
+  { mb, wiki, roles }: ImportContext,
   mbid: string,
   progress: string
 ) {
@@ -123,6 +135,17 @@ async function importArtist(
   const artist = toArtistRow(mbArtist)
   console.log(`${progress} ${artist.name} (${mbid})`)
   await startArtistImport(postgres, artist)
+
+  // La photo est facultative : une erreur Wikimedia ne fait pas échouer
+  // l'artiste, et la photo déjà en base (import précédent) est conservée.
+  try {
+    const image = await fetchArtistImage(wiki, mbArtist)
+    await saveArtistImage(postgres, mbid, image)
+    if (!image.imageFile) console.log("    pas de photo sur Wikidata")
+  } catch (error) {
+    const message = error instanceof Error ? error.message : String(error)
+    console.warn(`    photo ignorée : ${message}`)
+  }
 
   const related = membershipArtists(mbArtist)
   const memberships = toMemberships(mbArtist)
@@ -144,6 +167,18 @@ async function importArtist(
   }
 
   await finishArtistImport(postgres, mbid)
+}
+
+/** MusicBrainz → Wikidata (P18) → Commons (auteur, licence). Deux requêtes au plus. */
+async function fetchArtistImage(
+  wiki: WikimediaClient,
+  artist: MbArtist
+): Promise<ArtistImageRow> {
+  const qid = wikidataId(artist)
+  if (!qid) return NO_ARTIST_IMAGE
+  const file = pickImageFile(await wiki.getImageClaims(qid))
+  if (!file) return NO_ARTIST_IMAGE
+  return toArtistImage(file, await wiki.getFileInfo(file))
 }
 
 main()

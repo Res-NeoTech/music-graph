@@ -25,7 +25,7 @@ Les noms de tables et de colonnes sont en anglais, comme le code et les collecti
 
 Notation : clé primaire <ins>soulignée</ins>, clé étrangère précédée de `#`.
 
-- **artists** (<ins>mbid</ins>, name, sorting_name, type, country, start_date, finish_date, disambiguation, import_status, import_error, import_date)
+- **artists** (<ins>mbid</ins>, name, sorting_name, type, country, start_date, finish_date, disambiguation, image_file, image_author, image_licence, import_status, import_error, import_date)
 - **releases** (<ins>mbid</ins>, release_group_mbid, title, type, release_date, has_cover_art)
 - **recordings** (<ins>mbid</ins>, title, duration_ms, disambiguation)
 - **tracks** (<ins>mbid</ins>, #release_mbid, #recording_mbid, disc_number, position, title, duration_ms)
@@ -55,6 +55,9 @@ Types PostgreSQL. « Null » = la colonne accepte NULL.
 | `start_date`     | `varchar(10)`   | oui  | date partielle, voir [Dates](#dates-partielles)                                           |
 | `finish_date`       | `varchar(10)`   | oui  | idem                                                                                      |
 | `disambiguation` | `text`          | oui  | « US grunge band » : distingue les homonymes                                              |
+| `image_file`     | `text`          | oui  | nom du fichier de la photo sur Wikimedia Commons, voir [Photo](#photo-des-artistes)       |
+| `image_author`   | `text`          | oui  | auteur de la photo (texte, sans HTML), pour le crédit                                     |
+| `image_licence`  | `text`          | oui  | « CC BY-SA 4.0 », « Public domain »                                                       |
 | `import_status`  | `import_status` | oui  | `NULL` = artiste découvert via une relation, pas dans le corpus                           |
 | `import_error`   | `text`          | oui  | message de la dernière erreur, `NULL` si `ok`                                             |
 | `import_date`    | `timestamptz`   | oui  | date de la dernière tentative d'import                                                    |
@@ -235,6 +238,14 @@ C'est une simplification : un musicien qui quitte puis rejoint un groupe n'a qu'
 ### Rien de déductible n'est stocké (3FN)
 
 Il n'y a ni colonne « crédit affiché » (reconstruit depuis `release_artists`), ni URL de pochette : elle se déduit du MBID, `https://coverartarchive.org/release/{mbid}/front-250` si `has_cover_art`. `credited_name` et `tracks.title` ne sont pas des doublons : ils peuvent différer du nom de l'artiste et du titre du morceau. `detail` est un texte libre affiché tel quel et jamais filtré, il reste donc atomique pour la base.
+
+### Photo des artistes
+
+MusicBrainz n'a pas d'images d'artistes (la Cover Art Archive ne couvre que les releases). L'import suit un chemin qui ne passe jamais par le nom de l'artiste : le lien Wikidata saisi sur MusicBrainz (`inc=url-rels`, même requête que l'artiste), puis la propriété P18 (« image ») de l'élément Wikidata, qui donne un fichier de Wikimedia Commons, puis l'auteur et la licence de ce fichier. Seuls les artistes du corpus ont une photo ; les autres affichent l'icône de leur type.
+
+On stocke le nom du fichier, pas une URL : la vignette (`Special:FilePath/{fichier}?width=250`) et la page du fichier s'en déduisent, comme la pochette se déduit du MBID. L'auteur et la licence sont stockés parce que les licences CC BY / CC BY-SA exigent un crédit, et que l'application ne fait aucun appel externe pour l'afficher.
+
+Les trois colonnes sont dans `artists` plutôt que dans une table à part : un artiste a au plus une photo (0,1), et elles sont lues avec lui sur chaque page. Entorse assumée à la 3FN : `image_author` et `image_licence` dépendent du fichier, pas directement de l'artiste. Une table `images` (clé = nom du fichier) l'éviterait, mais un même fichier n'est presque jamais partagé par deux artistes du corpus. Une erreur de Wikimedia ne fait pas échouer l'import de l'artiste : la photo déjà en base est conservée.
 
 ### Suppressions en cascade
 
