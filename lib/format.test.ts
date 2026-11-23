@@ -3,8 +3,10 @@ import { describe, expect, it } from "vitest"
 import {
   countryName,
   formatActiveYears,
+  formatDuration,
   formatPartialDate,
   lifeSpanLabels,
+  totalDuration,
 } from "./format"
 
 describe("formatPartialDate", () => {
@@ -69,5 +71,29 @@ describe("countryName", () => {
   it("renvoie null sans code et le code tel quel s'il est invalide", () => {
     expect(countryName(null)).toBeNull()
     expect(countryName("?")).toBe("?")
+  })
+})
+
+describe("formatDuration", () => {
+  it("minutes:secondes, heures au-delà d'une heure", () => {
+    expect(formatDuration(280786)).toBe("4:41") // Dark Fantasy
+    expect(formatDuration(5000)).toBe("0:05")
+    expect(formatDuration(3723000)).toBe("1:02:03")
+  })
+
+  it("null si inconnue", () => {
+    expect(formatDuration(null)).toBeNull()
+    expect(formatDuration(0)).toBeNull()
+  })
+})
+
+describe("totalDuration", () => {
+  it("additionne les durées", () => {
+    expect(totalDuration([1000, 2500])).toBe(3500)
+  })
+
+  it("null si une durée manque ou s'il n'y a pas de piste", () => {
+    expect(totalDuration([1000, null])).toBeNull()
+    expect(totalDuration([])).toBeNull()
   })
 })

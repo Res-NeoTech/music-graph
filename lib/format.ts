@@ -29,6 +29,36 @@ export function formatPartialDate(date: string | null): string | null {
   return fullDate.format(Date.UTC(year, month - 1, day))
 }
 
+/** Durée en ms en "4:41", ou "1:02:03" au-delà d'une heure. null si inconnue. */
+export function formatDuration(ms: number | null): string | null {
+  if (ms === null || !Number.isFinite(ms) || ms <= 0) return null
+
+  const totalSeconds = Math.round(ms / 1000)
+  const hours = Math.floor(totalSeconds / 3600)
+  const minutes = Math.floor((totalSeconds % 3600) / 60)
+  const seconds = String(totalSeconds % 60).padStart(2, "0")
+
+  return hours > 0
+    ? `${hours}:${String(minutes).padStart(2, "0")}:${seconds}`
+    : `${minutes}:${seconds}`
+}
+
+/**
+ * Durée totale d'une liste de pistes. null si une seule durée manque : un
+ * total partiel serait faux sans qu'on le voie.
+ */
+export function totalDuration(
+  durations: readonly (number | null)[]
+): number | null {
+  if (durations.length === 0) return null
+  let total = 0
+  for (const ms of durations) {
+    if (ms === null) return null
+    total += ms
+  }
+  return total
+}
+
 function yearOf(date: string | null): string | null {
   return date ? date.slice(0, 4) : null
 }

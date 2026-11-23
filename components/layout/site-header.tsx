@@ -1,4 +1,4 @@
-import { RouteIcon, SearchIcon, UsersIcon } from "lucide-react"
+import { RouteIcon, SearchIcon, UsersIcon, Disc3Icon } from "lucide-react"
 import Link from "next/link"
 
 import { ThemeToggle } from "@/components/layout/theme-toggle"
@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button"
 const navItems = [
   { href: "/search", label: "Search", icon: SearchIcon },
   { href: "/artists", label: "Artists", icon: UsersIcon },
+  { href: "/releases", label: "Releases", icon: Disc3Icon },
   { href: "/path", label: "Path", icon: RouteIcon },
 ]
 

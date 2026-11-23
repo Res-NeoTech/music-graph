@@ -52,6 +52,7 @@ export function ArtistAvatar({
         alt=""
         width={px}
         height={px}
+        draggable={false}
         onError={() => setFailed(true)}
         className={cn(
           "shrink-0 bg-muted object-cover object-top",
