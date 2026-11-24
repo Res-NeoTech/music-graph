@@ -54,3 +54,12 @@ export async function findPages(page: number, pageSize: number): Promise<{ artis
         total: totalRows[0].value
     };
 }
+
+export async function findAll(): Promise<Artist[]> {
+    const query = await db
+        .select()
+        .from(artists)
+        .orderBy(artists.sortingName, artists.mbid)
+
+    return query.map(toArtist);
+}

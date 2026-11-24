@@ -49,3 +49,12 @@ export async function findPages(page: number, pageSize: number): Promise<{ relea
         total: totalRows[0].value
     };
 }
+
+export async function findAll(): Promise<Release[]> {
+    const query = await db
+        .select()
+        .from(releases)
+        .orderBy(releases.title, releases.mbid)
+
+    return query.map(toRelease);
+}
