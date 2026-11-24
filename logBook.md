@@ -99,3 +99,38 @@
 - Pagination de la liste : 24 artistes par page, numéro de page dans l'URL.
 - Début de la page de recherche, à terminer.
 - **Pourquoi la pagination :** la table contient plus de 6000 artistes, tout afficher d'un coup était lent. La base ne renvoie que la page demandée.
+
+---
+
+## 16.11.2026 — Photos des artistes
+
+**Durée :** 4 périodes
+
+- Import des photos : lien Wikidata de MusicBrainz → propriété P18 → fichier Wikimedia Commons.
+- Nouvelles colonnes `image_*` dans la table `artists` (fichier, auteur, licence), avec migration.
+- Avatar sur les cartes et la page artiste, avec le crédit de la photo. Sans photo, l'icône du type d'artiste est affichée.
+- 92 artistes du corpus sur 100 ont une photo.
+- **Pourquoi Wikimedia :** MusicBrainz n'a des images que pour les albums (Cover Art Archive). La plupart des photos de Commons sont sous licence CC BY ou BY-SA, qui oblige à citer l'auteur, d'où le crédit.
+- **Pourquoi dans le script d'import :** l'application ne contacte aucun service externe. Le navigateur charge directement la vignette depuis Commons.
+
+---
+
+## 23.11.2026 — Pages des albums
+
+**Durée :** 4 périodes
+
+- Liste des albums (`/releases`), paginée comme celle des artistes, et page de détail (`/releases/[mbid]`).
+- Composants : carte, pochette, en-tête et fiche (type, date, MBID, lien vers MusicBrainz). Lien « Releases » dans la navigation.
+- Composant de tracklist déjà prêt et testé, mais pas encore affiché.
+- **Pourquoi la tracklist attend :** les fonctions qui lisent les pistes et les artistes crédités ne sont pas encore écrites.
+- **Pourquoi la pochette est un composant client :** si l'image n'existe plus sur la Cover Art Archive, une icône de disque remplace l'image cassée.
+
+---
+
+## 24.11.2026 — Sitemap dynamique
+
+**Durée :** 4 périodes
+
+- `sitemap.xml` contient maintenant toutes les pages artiste et album, en plus des pages fixes.
+- Fonctions `findAll()` pour les artistes et les albums.
+- **Pourquoi :** les moteurs de recherche trouvent les pages de détail sans devoir suivre la pagination. Le sitemap est régénéré une fois par jour (`revalidate`), car le contenu ne change qu'après un import.
