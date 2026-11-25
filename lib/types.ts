@@ -21,6 +21,8 @@ export type Release = {
     hasCoverArt: boolean
 }
 
+
+
 /**
  * Un artiste d'un crédit (table release_artists ou recording_artists) :
  * « Kanye West feat. Kid Cudi » = [{ "Kanye West", " feat. " }, { "Kid Cudi", "" }]

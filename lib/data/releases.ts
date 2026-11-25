@@ -1,8 +1,8 @@
 import "server-only";
 import { db } from "../db/postgres/client";
-import { eq, count } from 'drizzle-orm'
-import { releases } from "../db/postgres/schema";
-import { Release } from "../types"
+import { eq, count, asc } from 'drizzle-orm'
+import { releases, tracks } from "../db/postgres/schema";
+import type { Release, Track } from "../types"
 
 function toRelease(row: typeof releases.$inferSelect): Release {
     return {
@@ -57,4 +57,26 @@ export async function findAll(): Promise<Release[]> {
         .orderBy(releases.title, releases.mbid)
 
     return query.map(toRelease);
+}
+
+function toTrack(row: typeof tracks.$inferSelect): Track {
+    return {
+        mbid: row.mbid,
+        recordingMbid: row.recordingMbid,
+        discNumber: row.discNumber,
+        position: row.position,
+        title: row.title,
+        durationMs: row.durationMs,
+    }
+}
+
+/** Tracklist d'une release, dans l'ordre du disque. */
+export async function findTracks(releaseMbid: string): Promise<Track[]> {
+    const rows = await db
+        .select()
+        .from(tracks)
+        .where(eq(tracks.releaseMbid, releaseMbid))
+        .orderBy(asc(tracks.discNumber), asc(tracks.position))
+
+    return rows.map(toTrack)
 }

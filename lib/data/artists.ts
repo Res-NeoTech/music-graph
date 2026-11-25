@@ -2,7 +2,7 @@ import "server-only";
 import { db } from "../db/postgres/client";
 import { eq, count } from 'drizzle-orm'
 import { artists } from "../db/postgres/schema";
-import { Artist, ArtistType } from "../types";
+import type { Artist, ArtistType } from "../types";
 
 /** Ligne de la table → type métier : la photo est regroupée dans un objet, ou null. */
 function toArtist(row: typeof artists.$inferSelect): Artist {
